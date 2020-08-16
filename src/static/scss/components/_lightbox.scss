@@ -1,0 +1,86 @@
+.grid {
+  @include center;
+
+  margin: 0.7em 0 0.7em 0;
+
+  .grid-item {
+    background: #ebebeb;
+    background-size: cover;
+    display: inline-block;
+    // positions text properly on picture tiles
+    @include transform(translate3d(0, 0, 0));
+  }
+}
+
+.grid-link {
+  margin: 0 auto;
+  padding-bottom: 70%;
+
+  @include transition(ease-in-out 0.5s);
+
+  @include on-event {
+    background-color: rgba(255, 255, 255, 0.4);
+
+    @include transition(ease-in-out 0.5s);
+
+    .tile {
+      background-color: rgba(0, 0, 0, 1);
+
+      @include transition(ease-in-out 0.5s);
+    }
+  }
+
+  .tile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    @include transition(ease-in-out 0.5s);
+
+    p {
+      text-align: center;
+      font-size: 1.125em;
+      letter-spacing: 0.125em;
+    }
+  }
+}
+
+// default width for pictures
+.span {
+  width: 33.3%;
+
+  @include bp-xs { width: 100%; }
+
+  @include bp-sm { width: 50%; }
+
+  @include bp-xl { width: 25%; }
+}
+
+/*
+  make the width better for single, two, three pictures
+  this is to fix scaling issues in larger devices
+*/
+.one-center {
+  @include bp-sm { width: 100%; }
+
+  @include bp-md { width: 66.7%; }
+
+  @include bp-lg { width: 50%; }
+
+  @include bp-xl { width: 33.3%; }
+}
+
+.two-center {
+  @include bp-md { width: 50%; }
+
+  @include bp-lg { width: 50%; }
+
+  @include bp-xl { width: 33.3%; }
+}
+
+.three-center {
+  @include bp-xl { width: 25%; }
+}

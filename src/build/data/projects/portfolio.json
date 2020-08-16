@@ -1,0 +1,32 @@
+{ 
+  "title": "Portfolio Template",
+  "info": {
+    "header": "Portfolio Template",
+    "description": "Portfolio template to showcase professional skills and projects.",
+    "features": [
+      {
+        "list": "Responsive tile images"
+      },
+      {
+        "list": "Consistent UI across all major browsers/devices"
+      }
+    ],
+    "tools": "HTML5/CSS3",
+    "demo": {
+        "name": "View on GitHub",
+        "link": "https://github.com/waldronmatt/portfolioWebTemplate"
+    }
+  },
+  "pictures": [
+    {
+      "picture": "portfolio/portfolio-1.png",
+      "title": "project page"
+    }, 
+    {
+      "picture": "portfolio/portfolio-2.png",
+      "title": "portfolio"
+    }
+  ],
+  "class": "grid-item two-center span",
+  "lightbox": "webex-dashboard"
+}

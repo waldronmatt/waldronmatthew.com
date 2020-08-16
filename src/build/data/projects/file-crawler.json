@@ -1,0 +1,39 @@
+{ 
+  "title": "Node.js File Crawler",
+  "info": {
+    "header": "Node.js File Crawler",
+    "description": "Terminal application for recursively finding and replacing in files.",
+    "features": [
+      {
+        "list": "Recursively scan files in directories and sub-directories"
+      },
+      {
+        "list": "User friendly report generation for team members"
+      },
+      {
+        "list": "App refactored from Perl so team can maintain"
+      }
+    ],
+    "tools": "Node.js"
+  },
+  "pictures": [
+    {
+      "picture": "file-crawler/file-crawler-1.png",
+      "title": "initial screen"
+    }, 
+    {
+      "picture": "file-crawler/file-crawler-2.png",
+      "title": "scanning"
+    },
+    {
+      "picture": "file-crawler/file-crawler-3.png",
+      "title": "create report"
+    },
+    {
+      "picture": "file-crawler/file-crawler-4.png",
+      "title": "view report"
+    }
+  ],
+  "class": "grid-item span",
+  "lightbox": "file-crawler"
+}

@@ -1,0 +1,24 @@
+{ 
+  "title": "Homepage",
+  "header": "Matthew Waldron",
+  "description": "Front-End Developer",
+  "pictures": [
+    {
+      "picture": "bowman/bowman-1.png",
+      "url": "bowman.html",
+      "title": "Bowman"
+    },
+    {
+      "picture": "claim-form/claim-form-1.png",
+      "url": "claim-form.html",
+      "title": "claim form"
+    }, 
+    {
+      "picture": "instacombo/sm-api-2.png",
+      "url": "instacombo.html",
+      "title": "Instacombo"
+    }
+  ],
+  "button": "Load More",
+  "class": "grid-item span"
+}

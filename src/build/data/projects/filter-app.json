@@ -1,0 +1,25 @@
+{ 
+  "title": "Filter App",
+  "info": {
+    "header": "Filter App",
+    "description": "App used by several teams at Cigna to filter training and development content.",
+    "features": [
+      {
+        "list": "Supports multi-toggle selection by category"
+      }
+    ],
+    "tools": "JavaScript, jQuery"
+  },
+  "pictures": [
+    {
+      "picture": "filter-app/filter-app-1.png",
+      "title": "instructions"
+    }, 
+    {
+      "picture": "filter-app/filter-app-2.png",
+      "title": "demo"
+    }
+  ],
+  "class": "grid-item two-center span",
+  "lightbox": "filter-app"
+}

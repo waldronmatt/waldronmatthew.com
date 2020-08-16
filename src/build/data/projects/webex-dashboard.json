@@ -1,0 +1,44 @@
+{ 
+  "title": "Webex Dashboard",
+  "info": {
+    "header": "Webex Dashboard",
+    "description": "Webex dashboard for updating meet settings quickly in one place.",
+    "features": [
+      {
+        "list": "Configure phone numbers, video address, and pin settings"
+      },
+      {
+        "list": "Configure alternate hosts"
+      }
+    ],
+    "tools": "PHP7, Bootstrap3, JavaScript, jQuery, Webex XML API",
+    "demo": {
+        "name": "View on GitHub",
+        "link": "https://github.com/waldronmatt/webexDashboard"
+    }
+  },
+  "pictures": [
+    {
+      "picture": "webex-dashboard/webex1.png",
+      "title": "dashboard"
+    }, 
+    {
+      "picture": "webex-dashboard/webex2.png",
+      "title": "phone number"
+    },
+    {
+      "picture": "webex-dashboard/webex3.png",
+      "title": "number updated"
+    },
+    {
+      "picture": "webex-dashboard/webex4.png",
+      "title": "lock room"
+    },
+    {
+      "picture": "webex-dashboard/webex5.png",
+      "title": "lock updated"
+    }
+  ],
+  "class": "grid-item span",
+  "lightbox": "webex-dashboard"
+}

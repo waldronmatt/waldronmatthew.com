@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<title><%= data.title %> | <%= site.title %></title>
+<meta name="description" content="<%= site.description %>"/>
+<meta name="keywords" content="<%= site.keywords %>" />
+<meta name="viewport" content="width=device-width" />
+
+<base href="<%= site.basePath %>">
+<link rel="icon" type="image/png" href="<%= site.basePath %>favicon.png">
+
+<!--
+  inject minified critical css
+  https://jonassebastianohlsson.com/criticalpathcssgenerator/#what-is
+-->
+
+<!-- 
+  comment out ejs variable inside style tags
+  this is so we can prevent stylelint errors
+-->
+
+
+<!-- <style>/* <%= site.criticalStyles %> */</style> -->
+
+
+<!-- 
+  recommended to leave line commented above
+  for development builds
+-->

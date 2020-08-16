@@ -1,0 +1,33 @@
+.link-container {
+  @include center;
+
+  // we need parent so the link effect occurs on target
+  .link {
+    a {
+      color: $light-blue;
+      letter-spacing: 0.125em;
+      padding: 0.3em 1.2em 0.3em 1.2em;
+      text-decoration: none;
+      font-weight: bold;
+
+      @include transition(all 0.35s ease);
+    }
+
+    a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0.125em;
+      border-bottom: solid 0.2em;
+      border-color: $dark-blue;
+    }
+
+    @include on-event {
+      ::after {
+        width: 100%;
+
+        @include transition(width 0.35s);
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<div class="container">
+  <p><strong><%= sharedData.features.featureText %></strong></p>
+  <ul>
+    <% data.info.features.forEach((el) => { %>
+      <li><%= el.list %></li>
+    <% }) %>
+  </ul>
+  <p><strong><%= sharedData.features.languageText %></strong>&nbsp;<%= data.info.tools %></p>
+</div>

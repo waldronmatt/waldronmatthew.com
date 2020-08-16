@@ -1,0 +1,41 @@
+{ 
+  "title": "Bowman",
+  "info": {
+    "header": "Bowman",
+    "description": "A simple static site generator powered by Node.js, Webpack, and Browsersync.",
+    "features": [
+      {
+        "list": "Uses a templating language to create reusable html components."
+      },
+      {
+        "list": "Recursively searches for files to build and output pages."
+      },
+      {
+        "list": "Integrated page build process so pages hot-reload when changed for faster development."
+      },
+      {
+        "list": "Utilizes Webpack hot-reloading through Browsersync via middleware."
+      },
+      {
+        "list": "Utilizes custom Webpack configurations for asset management and optimization."
+      }
+    ],
+    "tools": "Node.js, ES6 JavaScript, EJS, JSON, HTML5/Sass, Webpack, Browsersync",
+    "demo": {
+      "name": "View on GitHub",
+      "link": "https://github.com/waldronmatt/bowman"
+    }
+  },
+  "pictures": [
+    {
+      "picture": "bowman/bowman-1.png",
+      "title": "build"
+    }, 
+    {
+      "picture": "bowman/bowman-2.png",
+      "title": "output"
+    }
+  ],
+  "class": "grid-item two-center span",
+  "lightbox": "bowman"
+}

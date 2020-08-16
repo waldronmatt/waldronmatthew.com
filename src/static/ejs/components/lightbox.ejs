@@ -1,0 +1,11 @@
+<div class="grid">
+  <% data.pictures.forEach((el) => { %>
+    <div class="<%= data.class %>" style="background-image: url('<%= site.assetsManifest[`static/images/${el.picture}`] %>');">
+      <a href="<%= site.assetsManifest[`static/images/${el.picture}`] %>" class="grid-link" data-lightbox="<%= data.lightbox %>" data-title="<%= el.title %>">
+        <div class="tile">
+          <p><%= el.title %></p>
+        </div>
+      </a>
+    </div>
+  <% }) %>
+</div>

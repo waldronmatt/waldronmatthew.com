@@ -1,0 +1,42 @@
+// General purpose breakpoints
+@mixin xs { @media (min-width: #{$screen-xs-min}) { @content; } }
+
+@mixin sm { @media (min-width: #{$screen-sm-min}) { @content; } }
+
+@mixin md { @media (min-width: #{$screen-md-min}) { @content; } }
+
+@mixin lg { @media (min-width: #{$screen-lg-min}) { @content; } }
+
+@mixin xl { @media (min-width: #{$screen-xl-min}) { @content; } }
+
+// Range Breakpoints
+// Used for unique picture sizing via lightbox component
+@mixin bp-xs {
+  @media all and (max-width: $screen-sm-min - 1) {
+    @content;
+  }
+}
+
+@mixin bp-sm {
+  @media all and (min-width: $screen-sm-min) and (max-width: $screen-md-min - 1) {
+    @content;
+  }
+}
+
+@mixin bp-md {
+  @media all and (min-width: $screen-md-min) and (max-width: $screen-lg-min - 1) {
+    @content;
+  }
+}
+
+@mixin bp-lg {
+  @media all and (min-width: $screen-lg-min) and (max-width: $screen-xl-min - 1) {
+    @content;
+  }
+}
+
+@mixin bp-xl {
+  @media all and (min-width: $screen-xl-min) {
+    @content;
+  }
+}

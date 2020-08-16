@@ -1,0 +1,38 @@
+// basic styling for links
+a {
+  color: $light-blue;
+  font-size: $default-font-size;
+  text-decoration: none;
+
+  @include on-event {
+    color: $dark-blue;
+    text-decoration: underline;
+  }
+}
+
+// basic typography styling
+h1,
+h2,
+h3,
+p,
+li,
+a,
+button {
+  font-family: $font-type;
+  margin: $default-margin;
+}
+
+h1,
+h2,
+h3,
+a {
+  display: block;
+  text-align: center;
+}
+
+p,
+li {
+  text-align: left;
+  font-size: $default-font-size;
+  line-height: $default-line-height;
+}

@@ -1,0 +1,22 @@
+.btn-container {
+  @include center;
+
+  a,
+  button {
+    font-size: 1.375em;
+    background-color: $white;
+    letter-spacing: 0.125em;
+    padding: 0.8em 1.2em 0.8em 1.2em;
+    text-decoration: none;
+    color: $black;
+    border: solid 4px $dark-blue;
+    cursor: pointer;
+
+    @include transition(all 0.35s ease);
+
+    @include on-event {
+      color: $white;
+      background-color: $dark-blue;
+    }
+  }
+}

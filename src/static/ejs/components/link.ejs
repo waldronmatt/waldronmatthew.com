@@ -1,0 +1,9 @@
+<div class="link-container">
+  <div class="link">
+    <% if (data.info.header === 'Instacombo') { %>
+      <a href="<%= site.basePath %><%= data.info.demo.link %>" target="_blank"><%= data.info.demo.name %></a>
+    <% } else { %>
+      <a href="<%= data.info.demo.link %>" target="_blank"><%= data.info.demo.name %></a>
+    <% } %>
+  </div>
+</div>

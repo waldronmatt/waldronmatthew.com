@@ -1,0 +1,50 @@
+{ 
+  "title": "Music Website Template",
+  "info": {
+    "header": "Music Website Template",
+    "description": "Template for showcasing music, videos, news, pictures, and more.",
+    "features": [
+      {
+        "list": "Mailing list form, contact form"
+      }, 
+      {
+        "list": "Responsive picture modal, merch section"
+      }, 
+      {
+        "list": "Local music player, YouTube video player"
+      },
+      {
+        "list": "Album hero image, news, press, and shows section"
+      }
+    ],
+    "tools": "HTML5/CSS3, JavaScript, jQuery, PHP7",
+    "demo": {
+      "name": "View on GitHub",
+      "link": "https://github.com/waldronmatt/musicWebTemplate"
+    }
+  },
+  "pictures": [
+    {
+      "picture": "music-website/music1.png",
+      "title": "music"
+    }, 
+    {
+      "picture": "music-website/music2.png",
+      "title": "merch"
+    },
+    {
+      "picture": "music-website/music3.png",
+      "title": "photos"
+    },
+    {
+      "picture": "music-website/music4.png",
+      "title": "news"
+    },
+    {
+      "picture": "music-website/music5.png",
+      "title": "videos"
+    }
+  ],
+  "class": "grid-item span",
+  "lightbox": "music-website"
+}

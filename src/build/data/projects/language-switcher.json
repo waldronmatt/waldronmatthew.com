@@ -1,0 +1,36 @@
+{ 
+  "title": "Language Switcher",
+  "info": {
+    "header": "Language Switcher",
+    "description": "Language button that toggles between Spanish and English versions of pages on cigna.com.",
+    "features": [
+      {
+        "list": "Switcher 'remembers' user preference via cookies"
+      },
+      {
+        "list": "Language is retained throughout the viewing experience"
+      }
+    ],
+    "tools": "ES6 JavaScript, jQuery, HTML5",
+    "demo": {
+      "name": "view on cigna.com",
+      "link": "https://cigna.com"
+    }
+  },
+  "pictures": [
+    {
+      "picture": "language-switcher/lang-switcher-1.png",
+      "title": "language switcher"
+    }, 
+    {
+      "picture": "language-switcher/lang-switcher-2.png",
+      "title": "page translation"
+    },
+    {
+      "picture": "language-switcher/lang-switcher-3.png",
+      "title": "stay on spanish"
+    }
+  ],
+  "class": "grid-item span",
+  "lightbox": "language-switcher"
+}

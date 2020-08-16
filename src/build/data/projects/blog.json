@@ -1,0 +1,39 @@
+{ 
+  "title": "Blog Template",
+  "info": {
+    "header": "Blog Template",
+    "description": "Website blog template with responsive images.",
+    "features": [
+      {
+        "list": "Unique homepage design"
+      },
+      {
+        "list": "Responsive tile images"
+      },
+      {
+        "list": "Category buttons for filtering"
+      }
+    ],
+    "tools": "HTML5/CSS3",
+    "demo": {
+      "name": "View on GitHub",
+      "link": "https://github.com/waldronmatt/blogWebTemplate"
+    }
+  },
+  "pictures": [
+    {
+      "picture": "blog/blog1.png",
+      "title": "tile view"
+    }, 
+    {
+      "picture": "blog/blog2.png",
+      "title": "landing page"
+    },
+    {
+      "picture": "blog/blog3.png",
+      "title": "article"
+    }
+  ],
+  "class": "grid-item span",
+  "lightbox": "blog-template"
+}
