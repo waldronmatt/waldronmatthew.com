@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/waldronmatt/waldronmatthew.com.git"
   },
-  "homepage": "http://waldronmatthew.com",
+  "homepage": "https://www.waldronmatthew.com",
   "scripts": {
     "dev": "run-s webpack-prebuild-dev webpack-dev render-page-dev browsersync",
     "build": "run-s webpack-prebuild-prod webpack-prod render-page-prod",
@@ -28,7 +28,7 @@
     "webpack",
     "browsersync"
   ],
-  "author": "Matthew Waldron (http://waldronmatthew.com)",
+  "author": "Matthew Waldron (https://www.waldronmatthew.com)",
   "license": "MIT (Source Code)",
   "devDependencies": {
     "@babel/core": "^7.9.6",
