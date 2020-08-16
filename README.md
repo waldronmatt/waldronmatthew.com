@@ -1,6 +1,6 @@
 # waldronmatthew.com
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d78b85f5-0cf2-4525-acb8-bef8f6f560be/deploy-status)](https://app.netlify.com/sites/fervent-pasteur-bc0269/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d78b85f5-0cf2-4525-acb8-bef8f6f560be/deploy-status)](https://app.netlify.com/sites/waldronmatthew/deploys)
 
 The code for my personal [portfolio website](https://www.waldronmatthew.com). 
 
