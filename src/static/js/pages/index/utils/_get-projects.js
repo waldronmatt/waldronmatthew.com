@@ -31,5 +31,5 @@ export const getProjects = () => {
       document.getElementById('projects').appendChild(newProject);
     }
   }
-  loadMore && loadMore.addEventListener('click', getProjectData);
+  loadMore.addEventListener('click', getProjectData);
 }

@@ -13,11 +13,11 @@ const ps = require('./utils/paths');
 const staticManifest = require('../dist/static-manifest.json');
 
 const buildMarkup = (file, basePath) => {
-  // get page data
   const getFile = path.parse(file);
   const getExtentionJSON = file.replace(/\.ejs$/g, '.json');
-  let data;
 
+  // get page data
+  let data;
   try { 
     data = requireUncached(`../../src/${ps.dataPath}${getExtentionJSON}`);
     console.log(`getting json data at: src/${ps.dataPath}${getExtentionJSON}`);
@@ -78,7 +78,7 @@ const buildMarkup = (file, basePath) => {
     fse.writeFileSync(`${destPath}/${getFile.name}.html`, completePage);
     console.log(`writing rendered html markup to: ${destPath}/${getFile.name}.html`);
   } catch (error) {
-    throw Error('uable to write rendered html markup');
+    throw Error('unable to write rendered html markup');
   }
 }
 
