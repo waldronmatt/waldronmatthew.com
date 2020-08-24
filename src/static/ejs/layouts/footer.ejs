@@ -4,7 +4,7 @@
       <% if (el.text === 'Resume') { %>
         <a href="<%= site.basePath %><%= el.link %>" target="_blank"><%= el.text %></a>
       <% } else { %>
-      <a href="<%= el.link %>" target="_blank"><%= el.text %></a>
+      <a href="<%= el.link %>" target="_blank" rel="noreferrer"><%= el.text %></a>
       <% } %>
     </div>
   <% }) %>
@@ -12,4 +12,4 @@
 
 <a href="<%= site.basePath %>web.html">&copy;&nbsp;<%= sharedData.footer.leftText %>&nbsp;<span id="footer-copyright"></span>&nbsp;<%= sharedData.footer.rightText %></a>
 
-<a href="<%= sharedData.footer.centerLink %>" target="_blank"><%= sharedData.footer.centerText %></a>
+<a href="<%= sharedData.footer.centerLink %>" target="_blank" rel="noreferrer"><%= sharedData.footer.centerText %></a>
