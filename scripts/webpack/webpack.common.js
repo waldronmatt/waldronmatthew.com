@@ -35,14 +35,15 @@ module.exports = {
           {
             loader: "css-loader",
           },
-          // loader for webpack to process css with PostCSS
+          /* 
+            loader for webpack to process css with PostCSS
+
+            postcss-loader should be placed after css-loader and style-loader, 
+            but before other preprocessor loaders like e.g sass|less|stylus-loader
+            https://github.com/webpack-contrib/postcss-loader#config-cascade
+          */
           {
             loader: 'postcss-loader',
-            options: {
-              config: {
-                path: './postcss.config.js',
-              },
-            },
           },
           // loads a sass/scss file and compiles it to css
           {
@@ -56,19 +57,18 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          options: {
-            /* 
-              A collection of babel plugins that allows you to use the latest 
-              JavaScript without needing to micromanage which syntax transforms 
-              (and optionally, browser polyfills) are needed by your target environment(s)
-            */
-            presets: ['@babel/preset-env'],
-            /*
-              Externalise references to helpers and builtins, automatically 
-              polyfilling your code without polluting globals
-            */
-            plugins: ['@babel/plugin-transform-runtime'],
-          },
+          /* 
+            @babel/preset-env (.babelrc)
+            A collection of babel plugins that allows you to use the latest 
+            JavaScript without needing to micromanage which syntax transforms 
+            (and optionally, browser polyfills) are needed by your target environment(s)
+          */
+          
+          /*
+            @babel/plugin-transform-runtime (.babelrc)
+            Externalise references to helpers and builtins, automatically 
+            polyfilling your code without polluting globals
+          */
         },
       },
     ],
@@ -90,6 +90,49 @@ module.exports = {
       fileName: 'static-manifest.json',
     }),
   ],
+  /* 
+    SplitChunks finds modules which are shared between chunks and splits them 
+    into separate chunks to reduce duplication or separate vendor modules from application modules.
+  */
+  optimization: {
+    // https://medium.com/jspoint/react-router-and-webpack-v4-code-splitting-using-splitchunksplugin-f0a48f110312
+    splitChunks: {
+      // https://webpack.js.org/plugins/split-chunks-plugin/#split-chunks-example-2
+      cacheGroups: {
+        default: false,
+        vendors: false,
+        // vendor chunk
+        vendor: {
+          // name of the chunk
+          name: 'vendor',
+          /*
+            Optimization over Async and Sync Module (a default'ish' setting for chuncks)
+            https://medium.com/dailyjs/webpack-4-splitchunks-plugin-d9fbbe091fd0
+          */
+          chunks: 'all',
+          // import file path containing node_modules
+          test: /node_modules/,
+          priority: 20,
+        },
+        // https://webpack.js.org/plugins/split-chunks-plugin/#split-chunks-example-1
+        common: {
+          // create a commons chunk, which includes all code shared between entry points
+          name: 'common',
+          // minimum number of chunks that must share a module before splitting
+          minChunks: 2,
+          // async + async chunks
+          chunks: 'all',
+          priority: 10,
+          /* 
+            If the current chunk contains modules already split out from the main bundle, 
+            it will be reused instead of a new one being generated.
+          */
+          reuseExistingChunk: true,
+          enforce: true,
+        },
+      },
+    },
+  },
   performance : {
     hints : 'warning',
   },

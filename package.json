@@ -28,6 +28,11 @@
     "webpack",
     "browsersync"
   ],
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
   "author": "Matthew Waldron (https://www.waldronmatthew.com)",
   "license": "MIT (Source Code)",
   "devDependencies": {

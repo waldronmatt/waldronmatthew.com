@@ -6,15 +6,17 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
+  // disable for efficient prod builds and code reduction
+  devtool: false,
   output: {
-    filename: '[name].[contenthash].js',
+    filename: '[name].[contenthash:8].js',
     // specify chunck path for code splitted files
-    chunkFilename: 'static/js/[name].[contenthash].js',
+    chunkFilename: 'static/js/[name].[contenthash:8].js',
   },
   plugins: [
     // where the compiled scss is saved to
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
+      filename: '[name].[contenthash:8].css',
     }),
   ],
   optimization: {

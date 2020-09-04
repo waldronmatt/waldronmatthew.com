@@ -36,7 +36,7 @@ module.exports = {
         https://github.com/webpack-contrib/copy-webpack-plugin/issues/104
       */
       map: (file) => {
-        file.name = file.name.replace(/(\.[a-f0-9]{32})(\..*)$/, '$2');
+        file.name = file.name.replace(/(\.[a-f0-9]{8})(\..*)$/, '$2');
         return file;
       },
     }),
@@ -46,7 +46,7 @@ module.exports = {
       { from:'./src/static/vendors/', to: 'static/vendors', },
       { from:'./src/static/docs/', to: 'static/docs', },
       { from:'./src/favicon.png', to: 'favicon.png', },
-      // vendor files you don't want webpack to compile go below
+      // files you don't want webpack to compile go below (e.g. vendors)
       { from:'./src/static/scss/vendors/_lightbox.scss', to: 'static/css/vendors/lightbox.css', },
       { from:'./src/static/js/vendors/_lightbox.js', to: 'static/js/vendors/lightbox.js', },
     ]),

@@ -45,7 +45,7 @@ module.exports = merge(common, {
       Hot reload support for static assets (css, js)
       
       We're using webpack-livereload instead of webpack-dev-server because
-      we want assets served by browsersync server, but still want reloads 
+      we want assets served by browsersync server, but we still want reloads 
       triggered from webpack's build pipeline.
     */
     new LiveReloadPlugin({
@@ -60,8 +60,8 @@ module.exports = merge(common, {
       filename: '[name].css',
     }),
   ],
-  // don't minimize so we can debug
   optimization: {
+    // don't minimize so we can debug
     minimize: false,
   },
 });
