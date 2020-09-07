@@ -1,9 +1,22 @@
+<% let getPath = data.pictureData.path; %>
+<% let getExtension = data.pictureData.defaultExt; %>
+<% let getPicture = data.pictureData.pictures[0].filename; %>
+<% let manifestHasNextGenImage = site.assetsManifest[`static/images/${getPath}${getPicture}.webp`]; %>
+
 <div class="grid">
-  <% data.pictures.forEach((el) => { %>
-    <div class="<%= data.class %>" style="background-image: url('<%= site.assetsManifest[`static/images/${el.picture}`] %>');">
-      <a href="<%= site.assetsManifest[`static/images/${el.picture}`] %>" class="grid-link" data-lightbox="<%= data.lightbox %>" data-title="<%= el.title %>">
+  <% data.pictureData.pictures.forEach((picture) => { %>
+    <div class="<%= data.pictureData.class %>">
+      <a href="<%= site.assetsManifest[`static/images/${getPath}${picture.filename}.${getExtension}`] %>" class="grid-link" data-lightbox="<%= data.pictureData.lightbox %>" data-title="<%= picture.title %>">
+        <picture>
+          <% sharedData.lightbox.fallbacks.forEach((fallback) => { %>
+            <% if (manifestHasNextGenImage) { %>
+              <source srcset="<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">
+            <% } %>
+          <% }) %>
+          <img src="<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}.${getExtension}`] %>" alt="<%= picture.title %>">
+        </picture>
         <div class="tile">
-          <p><%= el.title %></p>
+          <p><%= picture.title %></p>
         </div>
       </a>
     </div>

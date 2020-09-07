@@ -10,16 +10,21 @@
     ],
     "tools": "JavaScript, jQuery"
   },
-  "pictures": [
-    {
-      "picture": "filter-app/filter-app-1.png",
-      "title": "instructions"
-    }, 
-    {
-      "picture": "filter-app/filter-app-2.png",
-      "title": "demo"
-    }
-  ],
-  "class": "grid-item two-center span",
-  "lightbox": "filter-app"
+  "pictureData": {
+    "name": "filter app",
+    "path": "filter-app/",
+    "defaultExt": "png",
+    "class": "grid-item two-center span",
+    "lightbox": "filter-app",
+    "pictures": [
+      {
+        "filename": "filter-app-1",
+        "title": "instructions"
+      }, 
+      {
+        "filename": "filter-app-2",
+        "title": "demo"
+      }
+    ]
+  }
 }

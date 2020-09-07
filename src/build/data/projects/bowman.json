@@ -26,16 +26,25 @@
       "link": "https://github.com/waldronmatt/bowman"
     }
   },
-  "pictures": [
-    {
-      "picture": "bowman/bowman-1.png",
-      "title": "build"
-    }, 
-    {
-      "picture": "bowman/bowman-2.png",
-      "title": "output"
-    }
-  ],
-  "class": "grid-item two-center span",
-  "lightbox": "bowman"
+  "pictureData": {
+    "name": "Bowman",
+    "path": "bowman/",
+    "defaultExt": "png",
+    "class": "grid-item two-center span",
+    "lightbox": "bowman",
+    "pictures": [
+      {
+        "filename": "bowman-1",
+        "title": "build"
+      }, 
+      {
+        "filename": "bowman-2",
+        "title": "score"
+      },
+      {
+        "filename": "bowman-3",
+        "title": "info"
+      }
+    ]
+  }
 }

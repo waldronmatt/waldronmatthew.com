@@ -17,16 +17,21 @@
         "link": "https://github.com/waldronmatt/portfolioWebTemplate"
     }
   },
-  "pictures": [
-    {
-      "picture": "portfolio/portfolio-1.png",
-      "title": "project page"
-    }, 
-    {
-      "picture": "portfolio/portfolio-2.png",
-      "title": "portfolio"
-    }
-  ],
-  "class": "grid-item two-center span",
-  "lightbox": "webex-dashboard"
+  "pictureData": {
+    "name": "personal portfolio",
+    "path": "portfolio/",
+    "defaultExt": "png",
+    "class": "grid-item two-center span",
+    "lightbox": "portfolio",
+    "pictures": [
+      {
+        "filename": "portfolio-1",
+        "title": "project page"
+      }, 
+      {
+        "filename": "portfolio-2",
+        "title": "portfolio"
+      }
+    ]
+  }
 }

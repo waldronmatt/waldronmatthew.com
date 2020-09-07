@@ -16,24 +16,29 @@
     ],
     "tools": "Node.js"
   },
-  "pictures": [
-    {
-      "picture": "file-crawler/file-crawler-1.png",
-      "title": "initial screen"
-    }, 
-    {
-      "picture": "file-crawler/file-crawler-2.png",
-      "title": "scanning"
-    },
-    {
-      "picture": "file-crawler/file-crawler-3.png",
-      "title": "create report"
-    },
-    {
-      "picture": "file-crawler/file-crawler-4.png",
-      "title": "view report"
-    }
-  ],
-  "class": "grid-item span",
-  "lightbox": "file-crawler"
+  "pictureData": {
+    "name": "file crawler",
+    "path": "file-crawler/",
+    "defaultExt": "png",
+    "class": "grid-item span",
+    "lightbox": "file-crawler",
+    "pictures": [
+      {
+        "filename": "file-crawler-1",
+        "title": "initial screen"
+      }, 
+      {
+        "filename": "file-crawler-2",
+        "title": "scanning"
+      },
+      {
+        "filename": "file-crawler-3",
+        "title": "create report"
+      },
+      {
+        "filename": "file-crawler-4",
+        "title": "view report"
+      }
+    ]
+  } 
 }

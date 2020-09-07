@@ -23,28 +23,33 @@
       "link": "http://mattwaldronmusic.com"
     }
   },
-  "pictures": [
-    {
-      "picture": "instacombo/sm-api-2.png",
-      "title": "album preview"
-    }, 
-    {
-      "picture": "instacombo/sm-api-4.png",
-      "title": "album tracks"
-    },
-    {
-      "picture": "instacombo/sm-api-6.png",
-      "title": "play videos"
-    },
-    {
-      "picture": "instacombo/sm-api-7.png",
-      "title": "view posts"
-    },
-    {
-      "picture": "instacombo/sm-api-10.png",
-      "title": "click analytics"
-    }
-  ],
-  "class": "grid-item span",
-  "lightbox": "instacombo"
+  "pictureData": {
+    "name": "Instacombo",
+    "path": "instacombo/",
+    "defaultExt": "png",
+    "class": "grid-item span",
+    "lightbox": "instacombo",
+    "pictures": [
+      {
+        "filename": "sm-api-2",
+        "title": "album preview"
+      }, 
+      {
+        "filename": "sm-api-4",
+        "title": "album tracks"
+      },
+      {
+        "filename": "sm-api-6",
+        "title": "play videos"
+      },
+      {
+        "filename": "sm-api-7",
+        "title": "view posts"
+      },
+      {
+        "filename": "sm-api-10",
+        "title": "click analytics"
+      }
+    ]
+  }
 }

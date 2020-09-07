@@ -9,17 +9,7 @@ template: basic
   </div>
 </div>
 
-<div class="grid" id="projects">
-  <% data.pictures.forEach((el) => { %>
-    <div class="<%= data.class %>" style="background-image: url('<%= site.assetsManifest[`static/images/${el.picture}`] %>');">
-      <a href="<%= site.basePath %>projects/<%= el.url %>" class="grid-link">
-        <div class="tile">
-          <p><%= el.title %></p>
-        </div>
-      </a>
-    </div>
-  <% }) %>
-</div>
+<div class="grid" id="projects"></div>
 
 <div class="btn-container">
   <div class="pages">

@@ -1,12 +1,9 @@
 .grid {
   @include center;
 
-  margin: 0.7em 0 0.7em 0;
+  margin: 0.7em 0;
 
   .grid-item {
-    background: #ebebeb;
-    background-size: cover;
-    display: inline-block;
     // positions text properly on picture tiles
     @include transform(translate3d(0, 0, 0));
   }
@@ -14,20 +11,30 @@
 
 .grid-link {
   margin: 0 auto;
-  padding-bottom: 70%;
+  height: 250px;
 
   @include transition(ease-in-out 0.5s);
 
   @include on-event {
-    background-color: rgba(255, 255, 255, 0.4);
+    img {
+      opacity: 0.5;
 
-    @include transition(ease-in-out 0.5s);
+      @include transition(ease-in-out 0.5s);
+    }
 
     .tile {
       background-color: rgba(0, 0, 0, 1);
 
       @include transition(ease-in-out 0.5s);
     }
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    @include transition(ease-in-out 0.5s);
   }
 
   .tile {

@@ -17,28 +17,33 @@
         "link": "https://github.com/waldronmatt/webexDashboard"
     }
   },
-  "pictures": [
-    {
-      "picture": "webex-dashboard/webex1.png",
-      "title": "dashboard"
-    }, 
-    {
-      "picture": "webex-dashboard/webex2.png",
-      "title": "phone number"
-    },
-    {
-      "picture": "webex-dashboard/webex3.png",
-      "title": "number updated"
-    },
-    {
-      "picture": "webex-dashboard/webex4.png",
-      "title": "lock room"
-    },
-    {
-      "picture": "webex-dashboard/webex5.png",
-      "title": "lock updated"
-    }
-  ],
-  "class": "grid-item span",
-  "lightbox": "webex-dashboard"
+  "pictureData": {
+    "name": "webex dashboard",
+    "path": "webex-dashboard/",
+    "defaultExt": "png",
+    "class": "grid-item span",
+    "lightbox": "webex-dashboard",
+    "pictures": [
+      {
+        "filename": "webex1",
+        "title": "dashboard"
+      }, 
+      {
+        "filename": "webex2",
+        "title": "phone number"
+      },
+      {
+        "filename": "webex3",
+        "title": "number updated"
+      },
+      {
+        "filename": "webex4",
+        "title": "lock room"
+      },
+      {
+        "filename": "webex5",
+        "title": "lock updated"
+      }
+    ]
+  }
 }

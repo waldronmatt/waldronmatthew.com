@@ -20,28 +20,33 @@
       "link": "https://github.com/waldronmatt/fullcalendar-BS4-PHP-MySQL-JSON"
     }
   },
-  "pictures": [
-    {
-      "picture": "fullcalendar/fullcal-1.png",
-      "title": "click and drag"
-    }, 
-    {
-      "picture": "fullcalendar/fullcal-2.png",
-      "title": "add recurrence"
-    },
-    {
-      "picture": "fullcalendar/fullcal-3.png",
-      "title": "event stored"
-    },
-    {
-      "picture": "fullcalendar/fullcal-4.png",
-      "title": "mouse hover details"
-    },
-    {
-      "picture": "fullcalendar/fullcal-5.png",
-      "title": "edit recurrence"
-    }
-  ],
-  "class": "grid-item span",
-  "lightbox": "fullcalendar"
+  "pictureData": {
+    "name": "FullCalendar integration",
+    "path": "fullcalendar/",
+    "defaultExt": "png",
+    "class": "grid-item span",
+    "lightbox": "fullcalendar",
+    "pictures": [
+      {
+        "filename": "fullcal-1",
+        "title": "click and drag"
+      }, 
+      {
+        "filename": "fullcal-2",
+        "title": "add recurrence"
+      },
+      {
+        "filename": "fullcal-3",
+        "title": "event stored"
+      },
+      {
+        "filename": "fullcal-4",
+        "title": "mouse hover details"
+      },
+      {
+        "filename": "fullcal-5",
+        "title": "edit recurrence"
+      }
+    ]
+  }
 }

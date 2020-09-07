@@ -20,20 +20,25 @@
       "link": "https://github.com/waldronmatt/blogWebTemplate"
     }
   },
-  "pictures": [
-    {
-      "picture": "blog/blog1.png",
-      "title": "tile view"
-    }, 
-    {
-      "picture": "blog/blog2.png",
-      "title": "landing page"
-    },
-    {
-      "picture": "blog/blog3.png",
-      "title": "article"
-    }
-  ],
-  "class": "grid-item span",
-  "lightbox": "blog-template"
+  "pictureData": {
+    "name": "blog website",
+    "path": "blog/",
+    "defaultExt": "png",
+    "class": "grid-item span",
+    "lightbox": "blog-template",
+    "pictures": [
+      {
+        "filename": "blog1",
+        "title": "tile view"
+      }, 
+      {
+        "filename": "blog2",
+        "title": "landing page"
+      },
+      {
+        "filename": "blog3",
+        "title": "article"
+      }
+    ]
+  }
 }

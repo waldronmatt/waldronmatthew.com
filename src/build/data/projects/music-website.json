@@ -23,28 +23,33 @@
       "link": "https://github.com/waldronmatt/musicWebTemplate"
     }
   },
-  "pictures": [
-    {
-      "picture": "music-website/music1.png",
-      "title": "music"
-    }, 
-    {
-      "picture": "music-website/music2.png",
-      "title": "merch"
-    },
-    {
-      "picture": "music-website/music3.png",
-      "title": "photos"
-    },
-    {
-      "picture": "music-website/music4.png",
-      "title": "news"
-    },
-    {
-      "picture": "music-website/music5.png",
-      "title": "videos"
-    }
-  ],
-  "class": "grid-item span",
-  "lightbox": "music-website"
+  "pictureData": {
+    "name": "music website",
+    "path": "music-website/",
+    "defaultExt": "png",
+    "class": "grid-item span",
+    "lightbox": "music-website",
+    "pictures": [
+      {
+        "filename": "music1",
+        "title": "music"
+      }, 
+      {
+        "filename": "music2",
+        "title": "merch"
+      },
+      {
+        "filename": "music3",
+        "title": "photos"
+      },
+      {
+        "filename": "music4",
+        "title": "news"
+      },
+      {
+        "filename": "music5",
+        "title": "videos"
+      }
+    ]
+  }
 }
