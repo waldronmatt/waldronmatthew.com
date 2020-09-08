@@ -4,48 +4,56 @@ import assetsManifest from 'dist/assets-manifest.json';
 
 export const getProjects = () => {
   var index = 0;
-  var count = 3;
+  var limit = 3;
   const loadMore = document.getElementById('loadMore');
 
   const getProjectData = () => {
-    count = index + count;
+    const counter = 5;
     const totaLength = projects.length;
-    const remainingLength = totaLength - totaLength + count;
+    const remainingLength = totaLength - limit;
 
-    if (count >= totaLength) {
-        loadMore.remove();
+    if (remainingLength <= 0) {
+      loadMore.remove();
+      limit = totaLength;
     }
 
-    if (totaLength - remainingLength < count) { 
-        count = totaLength - remainingLength;
-    }
-
-    const getFallbacks = () => {
-      let manifestHasNextGenImage = assetsManifest['static/images/logo.webp'];
+    const getFallbacks = (getPath, getFilename) => {
+      let manifestHasNextGenImage = assetsManifest[`static/images/${getPath}${getFilename}.webp`];
       let html = '';
       if (manifestHasNextGenImage) {
         fallbacks.forEach(fallback => {
-          html += `<source srcset="${assetsManifest[`static/images/${projects[index].pictureData.path}${projects[index].pictureData.pictures[0].filename}.${fallback.ext}`]}" type="image/${fallback.ext}">`;
+          html += `<source srcset="${assetsManifest[`static/images/${getPath}${getFilename}.${fallback.ext}`]}" type="image/${fallback.ext}">`;
         })
       }
       return html;
     };
 
-    for (index; index < remainingLength; index++) {
+    for (index; index < limit; index++) {
+      let getPath = projects[index].pictureData.path;
+      let getFilename = projects[index].pictureData.pictures[0].filename;
+      let getDefaultExt = projects[index].pictureData.defaultExt;
+      let getLightbox = projects[index].pictureData.lightbox;
+      let getPictureName = projects[index].pictureData.name;
+
+      // create html for each picture
       let newProject = document.createElement('div');
       newProject.className = 'grid-item span';
       newProject.innerHTML =
-      `<a href="projects/${projects[index].pictureData.lightbox}.html" class="grid-link">
-        <picture>
-        ${getFallbacks()}
-          <img src="${assetsManifest[`static/images/${projects[index].pictureData.path}${projects[index].pictureData.pictures[0].filename}.${projects[index].pictureData.defaultExt}`]}">
-        </picture>
-        <div class="tile">
-          <p>${projects[index].pictureData.name}</p>
-        </div>
-      </a>`
+        `<a href="projects/${getLightbox}.html" class="grid-link">
+          <picture>
+            ${getFallbacks(getPath, getFilename)}
+            <img src="${assetsManifest[`static/images/${getPath}${getFilename}.${getDefaultExt}`]}" alt="${getPictureName}">
+          </picture>
+          <div class="tile">
+            <p>${getPictureName}</p>
+          </div>
+        </a>`
+
+      // append to the picture root element
       document.getElementById('projects').appendChild(newProject);
     }
+
+    limit = limit + counter;
   }
 
   window.addEventListener('load', getProjectData);
