@@ -10,6 +10,19 @@ a {
   }
 }
 
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+// bullet alignment
+ul {
+  margin-left: $default-margin * 2;
+}
+
 // basic typography styling
 h1,
 h2,

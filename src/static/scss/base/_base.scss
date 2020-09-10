@@ -21,6 +21,7 @@ body {
     So we don't have invisible text on webfont load
   */
   font-family: "Palatino", serif;
+  word-break: initial;
 
   @include md {
     margin: 2em;
