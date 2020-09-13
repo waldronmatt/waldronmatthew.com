@@ -1,5 +1,17 @@
+<% let image = sharedData.header.image; %>
+<% let manifestHasNextGenImage = site.assetsManifest[`static/images/logo-sm.webp`]; %>
+
 <header>
-  <a href="index.html">
-    <img src="<%= site.basePath %><%= site.assetsManifest['static/images/logo.png'] %>" alt="logo">
+  <a href="<%= site.basePath %>">
+    <picture>
+      <% image.fallback.forEach((el) => { %>
+        <% if (manifestHasNextGenImage) { %>
+          <source media="(min-width: 1024px)" srcset="<%= site.basePath %><%= site.assetsManifest[`static/images/${image.lgName}.${el.ext}`] %>" type="image/<%= el.ext %>">
+          <source srcset="<%= site.basePath %><%= site.assetsManifest[`static/images/${image.smName}.${el.ext}`] %>" type="image/<%= el.ext %>">
+        <% } %>
+      <% }) %>
+      <source media="(min-width: 1024px)" srcset="<%= site.basePath %><%= site.assetsManifest[`static/images/${image.lgName}.png`] %>" type="image/png">
+      <img src="<%= site.basePath %><%= site.assetsManifest[`static/images/${image.smName}.png`] %>" alt="<%= image.alt %>">
+    </picture>
   </a>
 </header>

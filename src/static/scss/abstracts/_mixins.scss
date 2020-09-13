@@ -36,23 +36,33 @@
   transform: $args;
 }
 
-@mixin animation($args...) {
-  -webkit-animation: $args;
-  -moz-animation: $args;
-  -ms-animation: $args;
-  -o-animation: $args;
-  animation: $args;
-}
-
 // Center
 @mixin center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@mixin flex-center {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+@mixin grid-center {
+  display: grid;
   justify-content: center;
 }
 
 @mixin left-adjusted-center {
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+}
+
+@mixin link-important {
+  font-size: $default-font-size;
+  font-weight: bold;
+  letter-spacing: $default-letter-spacing;
+  text-decoration: none;
 }

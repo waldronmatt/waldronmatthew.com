@@ -24,13 +24,12 @@
   'base/typography';
 
 /* Layouts */
+@import
+  'layouts/header',
+  'layouts/footer';
 
 /* Components */
 @import
   'components/button',
   'components/link',
   'components/lightbox';
-
-/* Page-specific styles */
-@import
-  'pages/index/index';

@@ -30,7 +30,7 @@
     "name": "Bowman",
     "path": "bowman/",
     "defaultExt": "png",
-    "class": "grid-item two-center span",
+    "class": "grid-item span",
     "lightbox": "bowman",
     "pictures": [
       {

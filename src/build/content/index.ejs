@@ -2,17 +2,8 @@
 template: basic
 ---
 
-<h1><%= data.header %></h1>
-<div id="type-container" data-load="index">
-  <div class="typewriter">
-    <h2><%= data.description %></h2>
-  </div>
-</div>
+<div data-load="index" class="grid" id="projects"></div>
 
-<div class="grid" id="projects"></div>
-
-<div class="btn-container">
-  <div class="pages">
-    <div class="list" id="loadMore"><button ><%= data.button %></button></div>
-  </div>
+<div class="btn-container" id="loadMoreParent">
+  <button id="loadMore"><%= data.button %></button>
 </div>

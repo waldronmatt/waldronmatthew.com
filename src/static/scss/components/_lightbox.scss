@@ -1,7 +1,7 @@
 .grid {
-  @include center;
+  @include flex-center;
 
-  margin: 0.7em 0;
+  margin: $default-margin 0;
 
   .grid-item {
     // positions text properly on picture tiles
@@ -10,9 +10,6 @@
 }
 
 .grid-link {
-  margin: 0 auto;
-  height: 250px;
-
   @include transition(ease-in-out 0.5s);
 
   @include on-event {
@@ -30,7 +27,7 @@
   }
 
   img {
-    height: 100%;
+    height: 250px;
     width: 100%;
     object-fit: cover;
 
@@ -48,9 +45,10 @@
     @include transition(ease-in-out 0.5s);
 
     p {
+      font-size: 1.5em;
       text-align: center;
-      font-size: 1.125em;
-      letter-spacing: 0.125em;
+      padding: 0.5em;
+      letter-spacing: $default-letter-spacing;
     }
   }
 }
@@ -86,8 +84,4 @@
   @include bp-lg { width: 50%; }
 
   @include bp-xl { width: 33.3%; }
-}
-
-.three-center {
-  @include bp-xl { width: 25%; }
 }

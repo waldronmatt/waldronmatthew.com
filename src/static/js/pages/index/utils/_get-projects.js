@@ -6,6 +6,7 @@ export const getProjects = () => {
   var index = 0;
   var limit = 3;
   const loadMore = document.getElementById('loadMore');
+  const loadMoreParent = document.getElementById('loadMoreParent');
 
   const getProjectData = () => {
     const counter = 5;
@@ -13,7 +14,7 @@ export const getProjects = () => {
     const remainingLength = totaLength - limit;
 
     if (remainingLength <= 0) {
-      loadMore.remove();
+      loadMoreParent.remove();
       limit = totaLength;
     }
 

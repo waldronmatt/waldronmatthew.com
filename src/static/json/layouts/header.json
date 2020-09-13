@@ -1,0 +1,17 @@
+{ 
+  "header": {
+    "image": {
+      "smName": "logo-sm",
+      "lgName": "logo-lg",
+      "alt": "computer with html tag symbol surrounded by two initials",
+      "fallback": [
+        {
+          "ext": "webp"
+        }, 
+        {
+          "ext": "png"
+        }
+      ]
+    }
+  }
+}

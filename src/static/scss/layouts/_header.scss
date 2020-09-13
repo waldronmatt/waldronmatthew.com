@@ -1,0 +1,9 @@
+header {
+  margin: $default-margin 0 $default-margin * 2 0;
+
+  @include center;
+
+  @include lg {
+    margin: $default-margin 0 $default-margin * 3 0;
+  }
+}

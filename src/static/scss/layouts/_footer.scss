@@ -1,0 +1,7 @@
+#footer-sub-links {
+  @include grid-center;
+
+  text-align: center;
+  font-size: $default-font-size;
+  margin: $default-margin 0;
+}

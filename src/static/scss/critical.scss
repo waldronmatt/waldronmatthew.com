@@ -24,6 +24,11 @@
   'base/fonts',
   'base/typography';
 
+/* Layouts */
+@import
+  'layouts/header',
+  'layouts/footer';
+
 /* Components */
 @import
   'components/button',
