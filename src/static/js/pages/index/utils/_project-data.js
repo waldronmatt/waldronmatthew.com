@@ -1,4 +1,5 @@
 import bowman from '@data/bowman.json';
+import searchIntegrations from '@data/search-integrations.json';
 import claimForm from '@data/claim-form.json';
 import instaCombo from '@data/instacombo.json';
 import confluenceApps from '@data/confluence-apps.json';
@@ -13,6 +14,7 @@ import blogWebsite from '@data/blog.json';
 
 export const projects = [
   bowman,
+  searchIntegrations,
   claimForm,
   instaCombo,
   confluenceApps,

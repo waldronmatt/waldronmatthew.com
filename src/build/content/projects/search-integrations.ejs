@@ -1,0 +1,15 @@
+<%- include('../' + site.ejsPath + 'components/heading') %>
+
+<div class="link-container">
+  <% data.info.links.forEach((el) => { %>
+    <div class="link">
+      <a href="<%= el.link %>" target="_blank" rel="noreferrer"><%= el.text %></a>
+    </div>
+  <% }) %>
+</div>
+
+<%- include('../' + site.ejsPath + 'components/lightbox') %>
+
+<%- include('../' + site.ejsPath + 'components/features') %>
+
+<%- include('../' + site.ejsPath + 'components/button') %>
