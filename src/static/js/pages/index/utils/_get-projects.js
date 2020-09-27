@@ -38,9 +38,9 @@ export const getProjects = () => {
 
       // create html for each picture
       let newProject = document.createElement('div');
-      newProject.className = 'grid-item span';
+      newProject.className = 'img-container default-width';
       newProject.innerHTML =
-        `<a href="projects/${getLightbox}.html" class="grid-link">
+        `<a href="projects/${getLightbox}.html" class="img-link">
           <picture>
             ${getFallbacks(getPath, getFilename)}
             <img src="${assetsManifest[`static/images/${getPath}${getFilename}.${getDefaultExt}`]}" alt="${getPictureName}">

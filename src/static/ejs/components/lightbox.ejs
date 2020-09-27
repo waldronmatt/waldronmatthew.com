@@ -3,10 +3,10 @@
 <% let getPicture = data.pictureData.pictures[0].filename; %>
 <% let manifestHasNextGenImage = site.assetsManifest[`static/images/${getPath}${getPicture}.webp`]; %>
 
-<div class="grid">
+<div class="gallery">
   <% data.pictureData.pictures.forEach((picture) => { %>
-    <div class="grid-item span <%= data.pictureData.class %>">
-      <a href="<%= site.assetsManifest[`static/images/${getPath}${picture.filename}.${getExtension}`] %>" class="grid-link" data-lightbox="<%= data.pictureData.lightbox %>" data-title="<%= picture.title %>">
+    <div class="img-container default-width <%= data.pictureData.class %>">
+      <a href="<%= site.assetsManifest[`static/images/${getPath}${picture.filename}.${getExtension}`] %>" class="img-link" data-lightbox="<%= data.pictureData.lightbox %>" data-title="<%= picture.title %>">
         <picture>
           <% sharedData.lightbox.fallbacks.forEach((fallback) => { %>
             <% if (manifestHasNextGenImage) { %>

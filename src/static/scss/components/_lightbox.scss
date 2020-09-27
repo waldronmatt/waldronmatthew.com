@@ -1,15 +1,15 @@
-.grid {
+.gallery {
   @include flex-center;
 
   margin: $default-margin 0;
 
-  .grid-item {
+  .img-container {
     // positions text properly on picture tiles
     @include transform(translate3d(0, 0, 0));
   }
 }
 
-.grid-link {
+.img-link {
   @include transition(ease-in-out 0.5s);
 
   @include on-event {
@@ -54,7 +54,7 @@
 }
 
 // default width for pictures
-.span {
+.default-width {
   width: 33.3%;
 
   @include bp-xs { width: 100%; }
