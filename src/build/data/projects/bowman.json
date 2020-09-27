@@ -20,7 +20,7 @@
         "list": "Utilizes custom Webpack configurations for asset management and optimization."
       }
     ],
-    "tools": "Node.js, ES6 JavaScript, EJS, JSON, HTML5/Sass, Webpack, Browsersync",
+    "tools": "Node.js, Next-Gen JavaScript, EJS, JSON, HTML5, Sass, Webpack, Browsersync",
     "demo": {
       "name": "View on GitHub",
       "link": "https://github.com/waldronmatt/bowman"

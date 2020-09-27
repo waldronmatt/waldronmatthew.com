@@ -35,7 +35,7 @@
           "list": "Elastic search tools are polyfilled to support older browsers."
         }
       ],
-      "tools": "HTML5/Sass, Bootstrap4, ES6 JavaScript, jQuery"
+      "tools": "HTML5, Sass, Bootstrap4, Next-Gen JavaScript, jQuery"
     },
     "pictureData": {
       "name": "search-integrations",

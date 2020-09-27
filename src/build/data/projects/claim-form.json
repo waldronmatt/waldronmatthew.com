@@ -23,7 +23,7 @@
         "list": "Dynamically add/remove physician fields"
       }
     ],
-    "tools": "ES6 JavaScript, jQuery, Bootstrap4, HTML5/Sass, EJS, JSON",
+    "tools": "Next-Gen JavaScript, jQuery, Bootstrap4, HTML5, Sass, EJS, JSON",
     "demo": {
       "name": "View Claim Form",
       "link": "https://www.cigna.com/individuals-families/member-resources/supplemental-health-claim-form"
