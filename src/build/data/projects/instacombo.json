@@ -27,7 +27,7 @@
     "name": "Instacombo",
     "path": "instacombo/",
     "defaultExt": "png",
-    "class": "grid-item span",
+    "class": "",
     "lightbox": "instacombo",
     "pictures": [
       {

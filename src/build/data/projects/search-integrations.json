@@ -41,7 +41,7 @@
       "name": "search-integrations",
       "path": "search-integrations/",
       "defaultExt": "png",
-      "class": "grid-item span",
+      "class": "",
       "lightbox": "search-integrations",
       "pictures": [
         {

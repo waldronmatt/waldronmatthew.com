@@ -21,7 +21,7 @@
     "name": "personal portfolio",
     "path": "portfolio/",
     "defaultExt": "png",
-    "class": "grid-item two-center span",
+    "class": "two-center",
     "lightbox": "portfolio",
     "pictures": [
       {

@@ -24,7 +24,7 @@
     "name": "FullCalendar integration",
     "path": "fullcalendar/",
     "defaultExt": "png",
-    "class": "grid-item span",
+    "class": "",
     "lightbox": "fullcalendar",
     "pictures": [
       {

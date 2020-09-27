@@ -33,7 +33,7 @@
     "name": "claim form",
     "path": "claim-form/",
     "defaultExt": "png",
-    "class": "grid-item span",
+    "class": "",
     "lightbox": "claim-form",
     "pictures": [
       {

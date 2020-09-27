@@ -5,7 +5,7 @@
 
 <div class="grid">
   <% data.pictureData.pictures.forEach((picture) => { %>
-    <div class="<%= data.pictureData.class %>">
+    <div class="grid-item span <%= data.pictureData.class %>">
       <a href="<%= site.assetsManifest[`static/images/${getPath}${picture.filename}.${getExtension}`] %>" class="grid-link" data-lightbox="<%= data.pictureData.lightbox %>" data-title="<%= picture.title %>">
         <picture>
           <% sharedData.lightbox.fallbacks.forEach((fallback) => { %>
