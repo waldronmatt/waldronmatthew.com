@@ -21,7 +21,6 @@
     "name": "language button",
     "path": "language-switcher/",
     "defaultExt": "png",
-    "class": "",
     "lightbox": "language-switcher",
     "pictures": [
       {

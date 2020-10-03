@@ -21,7 +21,6 @@
     "name": "webex dashboard",
     "path": "webex-dashboard/",
     "defaultExt": "png",
-    "class": "",
     "lightbox": "webex-dashboard",
     "pictures": [
       {

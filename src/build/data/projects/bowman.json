@@ -30,7 +30,6 @@
     "name": "Bowman",
     "path": "bowman/",
     "defaultExt": "png",
-    "class": "",
     "lightbox": "bowman",
     "pictures": [
       {

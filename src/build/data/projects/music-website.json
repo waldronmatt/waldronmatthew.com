@@ -27,7 +27,6 @@
     "name": "music website",
     "path": "music-website/",
     "defaultExt": "png",
-    "class": "",
     "lightbox": "music-website",
     "pictures": [
       {

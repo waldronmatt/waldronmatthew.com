@@ -14,7 +14,6 @@
     "name": "filter app",
     "path": "filter-app/",
     "defaultExt": "png",
-    "class": "two-center",
     "lightbox": "filter-app",
     "pictures": [
       {

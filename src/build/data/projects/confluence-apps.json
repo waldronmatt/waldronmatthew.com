@@ -27,7 +27,6 @@
     "name": "Confluence apps",
     "path": "confluence-apps/",
     "defaultExt": "png",
-    "class": "",
     "lightbox": "confluence-apps",
     "pictures": [
       {

@@ -5,7 +5,7 @@
 
 <div class="gallery">
   <% data.pictureData.pictures.forEach((picture) => { %>
-    <div class="img-container default-width <%= data.pictureData.class %>">
+    <div class="img-container default-width">
       <a href="<%= site.assetsManifest[`static/images/${getPath}${picture.filename}.${getExtension}`] %>" class="img-link" data-lightbox="<%= data.pictureData.lightbox %>" data-title="<%= picture.title %>">
         <picture>
           <% sharedData.lightbox.fallbacks.forEach((fallback) => { %>

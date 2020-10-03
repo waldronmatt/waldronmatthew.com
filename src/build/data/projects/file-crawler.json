@@ -20,7 +20,6 @@
     "name": "file crawler",
     "path": "file-crawler/",
     "defaultExt": "png",
-    "class": "",
     "lightbox": "file-crawler",
     "pictures": [
       {

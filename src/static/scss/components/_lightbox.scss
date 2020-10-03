@@ -45,7 +45,6 @@
     @include transition(ease-in-out 0.5s);
 
     p {
-      font-size: 1.5em;
       text-align: center;
       padding: 0.5em;
       letter-spacing: $default-letter-spacing;
@@ -56,33 +55,11 @@
 
 // default width for pictures
 .default-width {
-  width: 33.3%;
+  width: 100%;
 
-  @include bp-xs { width: 100%; }
-
-  @include bp-sm { width: 50%; }
-
-  @include bp-xl { width: 25%; }
-}
-
-/*
-  make the width better for single, two, three pictures
-  this is to fix scaling issues in larger devices
-*/
-.one-center {
-  @include bp-sm { width: 100%; }
-
-  @include bp-md { width: 66.7%; }
-
-  @include bp-lg { width: 50%; }
-
-  @include bp-xl { width: 33.3%; }
-}
-
-.two-center {
   @include bp-md { width: 50%; }
 
-  @include bp-lg { width: 50%; }
+  @include bp-lg { width: 33.3%; }
 
-  @include bp-xl { width: 33.3%; }
+  @include bp-xl { width: 25%; }
 }

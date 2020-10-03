@@ -24,7 +24,6 @@
     "name": "blog website",
     "path": "blog/",
     "defaultExt": "png",
-    "class": "",
     "lightbox": "blog",
     "pictures": [
       {
