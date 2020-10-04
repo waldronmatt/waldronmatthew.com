@@ -18,22 +18,22 @@
     }
   },
   "pictureData": {
-    "name": "language button",
+    "name": "switcher",
     "path": "language-switcher/",
     "defaultExt": "png",
     "lightbox": "language-switcher",
     "pictures": [
       {
         "filename": "lang-switcher-1",
-        "title": "language switcher"
+        "title": "switcher"
       }, 
       {
         "filename": "lang-switcher-2",
-        "title": "page translation"
+        "title": "translation"
       }, 
       {
         "filename": "lang-switcher-3",
-        "title": "stay on spanish"
+        "title": "spanish"
       }
     ]
   }

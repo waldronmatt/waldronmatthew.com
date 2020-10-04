@@ -21,18 +21,18 @@
     }
   },
   "pictureData": {
-    "name": "blog website",
+    "name": "blog",
     "path": "blog/",
     "defaultExt": "png",
     "lightbox": "blog",
     "pictures": [
       {
         "filename": "blog1",
-        "title": "tile view"
+        "title": "tiles"
       }, 
       {
         "filename": "blog2",
-        "title": "landing page"
+        "title": "landing"
       },
       {
         "filename": "blog3",

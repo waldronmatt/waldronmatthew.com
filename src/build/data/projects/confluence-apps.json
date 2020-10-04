@@ -2,7 +2,7 @@
   "title": "Confluence Apps",
   "info": {
     "header": "Interactive Org Chart and Navigation Bar",
-    "description": "Interactive org chart for displaying committees and a navigation bar that updates page names and links.",
+    "description": "Interactive org chart for displaying committees and a navigation bar that updates page names and links devloped for corporate confluence space.",
     "features": [
       {
         "list": "Org chart simplifies committee structure viewing"
@@ -24,30 +24,26 @@
     }
   },
   "pictureData": {
-    "name": "Confluence apps",
+    "name": "confluence",
     "path": "confluence-apps/",
     "defaultExt": "png",
     "lightbox": "confluence-apps",
     "pictures": [
       {
         "filename": "org-chart-1",
-        "title": "expand all"
+        "title": "expand"
       }, 
       {
-        "filename": "org-chart-2",
-        "title": "expand one"
-      },
-      {
         "filename": "org-chart-3",
-        "title": "collapse all"
+        "title": "collapse"
       },
       {
         "filename": "nav-bar-1",
-        "title": "global navigation"
+        "title": "global"
       },
       {
         "filename": "nav-bar-2",
-        "title": "committee navigation"
+        "title": "committee"
       }
     ]
   }

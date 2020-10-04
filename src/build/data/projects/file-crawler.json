@@ -17,26 +17,26 @@
     "tools": "Node.js"
   },
   "pictureData": {
-    "name": "file crawler",
+    "name": "crawler",
     "path": "file-crawler/",
     "defaultExt": "png",
     "lightbox": "file-crawler",
     "pictures": [
       {
         "filename": "file-crawler-1",
-        "title": "initial screen"
+        "title": "app"
       }, 
       {
         "filename": "file-crawler-2",
-        "title": "scanning"
+        "title": "scan"
       },
       {
         "filename": "file-crawler-3",
-        "title": "create report"
+        "title": "report"
       },
       {
         "filename": "file-crawler-4",
-        "title": "view report"
+        "title": "view"
       }
     ]
   } 

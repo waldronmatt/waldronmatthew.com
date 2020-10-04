@@ -30,26 +30,26 @@
     }
   },
   "pictureData": {
-    "name": "claim form",
+    "name": "form",
     "path": "claim-form/",
     "defaultExt": "png",
     "lightbox": "claim-form",
     "pictures": [
       {
         "filename": "claim-form-1",
-        "title": "first section"
+        "title": "section"
       }, 
       {
         "filename": "claim-form-2",
-        "title": "review section"
+        "title": "review"
       },
       {
         "filename": "claim-form-3",
-        "title": "add/remove fields"
+        "title": "add fields"
       },
       {
         "filename": "claim-form-4",
-        "title": "localization support"
+        "title": "locale support"
       }
     ]
   }

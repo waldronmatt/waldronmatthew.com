@@ -27,9 +27,13 @@
   }
 
   img {
-    height: 250px;
+    max-height: 250px;
     width: 100%;
     object-fit: cover;
+
+    @include md {
+      height: 250px;
+    }
 
     @include transition(ease-in-out 0.5s);
   }
@@ -46,9 +50,13 @@
 
     p {
       text-align: center;
-      padding: 0.5em;
+      padding: 0.25em;
       letter-spacing: $default-letter-spacing;
       word-break: initial;
+
+      @include md {
+        padding: 0.5em;
+      }
     }
   }
 }

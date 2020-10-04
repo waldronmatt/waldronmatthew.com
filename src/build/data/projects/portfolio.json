@@ -18,18 +18,18 @@
     }
   },
   "pictureData": {
-    "name": "personal portfolio",
+    "name": "portfolio",
     "path": "portfolio/",
     "defaultExt": "png",
     "lightbox": "portfolio",
     "pictures": [
       {
         "filename": "portfolio-1",
-        "title": "project page"
+        "title": "landing"
       }, 
       {
         "filename": "portfolio-2",
-        "title": "portfolio"
+        "title": "pictures"
       }
     ]
   }

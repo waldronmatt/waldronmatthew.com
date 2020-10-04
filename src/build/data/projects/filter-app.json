@@ -11,7 +11,7 @@
     "tools": "JavaScript, jQuery"
   },
   "pictureData": {
-    "name": "filter app",
+    "name": "filter",
     "path": "filter-app/",
     "defaultExt": "png",
     "lightbox": "filter-app",

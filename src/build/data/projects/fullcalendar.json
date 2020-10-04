@@ -21,30 +21,30 @@
     }
   },
   "pictureData": {
-    "name": "FullCalendar integration",
+    "name": "calendar",
     "path": "fullcalendar/",
     "defaultExt": "png",
     "lightbox": "fullcalendar",
     "pictures": [
       {
         "filename": "fullcal-1",
-        "title": "click and drag"
+        "title": "click"
       }, 
       {
         "filename": "fullcal-2",
-        "title": "add recurrence"
+        "title": "add"
       },
       {
         "filename": "fullcal-3",
-        "title": "event stored"
+        "title": "store"
       },
       {
         "filename": "fullcal-4",
-        "title": "mouse hover details"
+        "title": "details"
       },
       {
         "filename": "fullcal-5",
-        "title": "edit recurrence"
+        "title": "edit"
       }
     ]
   }

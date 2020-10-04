@@ -18,7 +18,7 @@
     }
   },
   "pictureData": {
-    "name": "webex dashboard",
+    "name": "webex",
     "path": "webex-dashboard/",
     "defaultExt": "png",
     "lightbox": "webex-dashboard",
@@ -29,19 +29,19 @@
       }, 
       {
         "filename": "webex2",
-        "title": "phone number"
+        "title": "phone"
       },
       {
         "filename": "webex3",
-        "title": "number updated"
+        "title": "updated"
       },
       {
         "filename": "webex4",
-        "title": "lock room"
+        "title": "lock"
       },
       {
         "filename": "webex5",
-        "title": "lock updated"
+        "title": "updated"
       }
     ]
   }

@@ -27,23 +27,23 @@
     "pictures": [
       {
         "filename": "sm-api-2",
-        "title": "album preview"
+        "title": "preview"
       }, 
       {
         "filename": "sm-api-4",
-        "title": "album tracks"
+        "title": "tracks"
       },
       {
         "filename": "sm-api-6",
-        "title": "play videos"
+        "title": "videos"
       },
       {
         "filename": "sm-api-7",
-        "title": "view posts"
+        "title": "posts"
       },
       {
         "filename": "sm-api-10",
-        "title": "click analytics"
+        "title": "analytics"
       }
     ]
   }

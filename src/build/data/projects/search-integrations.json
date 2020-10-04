@@ -1,7 +1,7 @@
 { 
     "title": "Search Integrations",
     "info": {
-      "header": "Search Integrations",
+      "header": "Search App Integrations",
       "description": "Integrated team's elastic search wrapper and fuzzy search library into existing sites.",
       "links": [
         {
@@ -42,7 +42,7 @@
       "tools": "HTML5, Sass, Bootstrap4, Next-Gen JavaScript, jQuery"
     },
     "pictureData": {
-      "name": "search integrations",
+      "name": "search",
       "path": "search-integrations/",
       "defaultExt": "png",
       "lightbox": "search-integrations",
@@ -53,19 +53,19 @@
         }, 
         {
           "filename": "si-2",
-          "title": "cigna medical group"
+          "title": "cmgaz.com"
         },
         {
           "filename": "si-3",
-          "title": "cigna uk"
+          "title": "UK"
         },
         {
           "filename": "si-4",
-          "title": "cigna global"
+          "title": "global"
         },
         {
           "filename": "si-5",
-          "title": "cigna global health"
+          "title": "global health"
         }
       ]
     }
