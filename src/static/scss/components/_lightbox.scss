@@ -31,10 +31,6 @@
     width: 100%;
     object-fit: cover;
 
-    @include md {
-      height: 250px;
-    }
-
     @include transition(ease-in-out 0.5s);
   }
 
