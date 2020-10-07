@@ -5,23 +5,21 @@
 
 <div class="gallery">
   <% data.pictureData.pictures.forEach((picture) => { %>
-    <div class="img-container default-width">
-      <a href="<%= site.assetsManifest[`static/images/${getPath}${picture.filename}-lg.${getExtension}`] %>" class="img-link" data-lightbox="<%= data.pictureData.lightbox %>" data-title="<%= picture.title %>">
-        <picture>
-          <% sharedData.lightbox.fallbacks.forEach((fallback) => { %>
-            <% if (manifestHasNextGenImage) { %>
-              <source media="(max-width: 320px)" srcset="<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}-xs.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">
-              <source media="(min-width: 321px) and (max-width: 767px)" srcset="<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}-sm.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">
-              <source media="(min-width: 768px) and (max-width: 1439px)" srcset="<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}-md.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">
-              <source media="(min-width: 1440px)" srcset="<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}-lg.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">        
-            <% } %>
-          <% }) %>
-          <img src="<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}-lg.${getExtension}`] %>" alt="<%= picture.title %>">
-        </picture>
-        <div class="tile">
-          <p><%= picture.title %></p>
-        </div>
-      </a>
-    </div>
+    <a href="<%= site.assetsManifest[`static/images/${getPath}${picture.filename}-lg.${getExtension}`] %>" class="default-width img-link" data-lightbox="<%= data.pictureData.lightbox %>" data-title="<%= picture.title %>">
+      <picture>
+        <% sharedData.lightbox.fallbacks.forEach((fallback) => { %>
+          <% if (manifestHasNextGenImage) { %>
+            <source media="(max-width: 320px)" srcset="<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}-xs.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">
+            <source media="(min-width: 321px) and (max-width: 767px)" srcset="<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}-sm.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">
+            <source media="(min-width: 768px) and (max-width: 1439px)" srcset="<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}-md.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">
+            <source media="(min-width: 1440px)" srcset="<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}-lg.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">        
+          <% } %>
+        <% }) %>
+        <img src="<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}-lg.${getExtension}`] %>" alt="<%= picture.title %>">
+      </picture>
+      <div class="tile">
+        <p><%= picture.title %></p>
+      </div>
+    </a>
   <% }) %>
 </div>

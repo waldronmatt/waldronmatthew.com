@@ -42,18 +42,17 @@ export const getProjects = () => {
       let getPictureName = projects[index].pictureData.name;
 
       // create html for each picture
-      let newProject = document.createElement('div');
-      newProject.className = 'img-container default-width';
+      let newProject = document.createElement('a');
+      newProject.className = 'default-width img-link';
+      newProject.href = `projects/${getLightbox}.html`;
       newProject.innerHTML =
-        `<a href="projects/${getLightbox}.html" class="img-link">
-          <picture>
+          `<picture>
             ${getFallbacks(getPath, getFilename)}
             <img src="${assetsManifest[`static/images/${getPath}${getFilename}-lg.${getDefaultExt}`]}" alt="${getPictureName}">
           </picture>
           <div class="tile">
             <p>${getPictureName}</p>
-          </div>
-        </a>`
+          </div>`
 
       // append to the picture root element
       document.getElementById('projects').appendChild(newProject);
