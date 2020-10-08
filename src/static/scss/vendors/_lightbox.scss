@@ -8,7 +8,20 @@
   background-position: center center;
 }
 
+/*
+  Cross browser support to hide the lightbox image scrollbar
+  while also hiding it
+
+  https://stackoverflow.com/a/49278385
+
+*/
 .perfundo__figure {
-  // hide scroll bar resulting from 100% padding-top
-  overflow-y: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.perfundo__figure::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
 }
