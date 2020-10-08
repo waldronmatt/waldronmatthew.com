@@ -1,1 +1,14 @@
 @import 'node_modules/perfundo/scss/with-icons.scss';
+
+.perfundo__image {
+  // override default
+  background-size: contain !important;
+  // center
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.perfundo__figure {
+  // hide scroll bar resulting from 100% padding-top
+  overflow-y: hidden;
+}
