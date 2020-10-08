@@ -1,0 +1,51 @@
+{ 
+  "title": "FullCalendar Integration",
+  "info": {
+    "header": "FullCalendar Back-end Integration",
+    "description": "Expands on existing FullCalendar libraries by adding JSON event permanence and recurring event capabilities.",
+    "features": [
+      {
+        "list": "JSON event scheduling"
+      },
+      {
+        "list": "Recurring event capabilities"
+      }, 
+      {
+        "list": "Multi-day recurrences supported"
+      }
+    ],
+    "tools": "PHP7, Bootstrap4, JavaScript, jQuery, JSON, SQL",
+    "demo": {
+      "name": "View on GitHub",
+      "link": "https://github.com/waldronmatt/fullcalendar-BS4-PHP-MySQL-JSON"
+    }
+  },
+  "pictureData": {
+    "name": "calendar",
+    "path": "fullcalendar/",
+    "defaultExt": "png",
+    "lightbox": "fullcalendar",
+    "pictures": [
+      {
+        "filename": "fullcal-1",
+        "title": "click"
+      }, 
+      {
+        "filename": "fullcal-2",
+        "title": "add"
+      },
+      {
+        "filename": "fullcal-3",
+        "title": "store"
+      },
+      {
+        "filename": "fullcal-4",
+        "title": "details"
+      },
+      {
+        "filename": "fullcal-5",
+        "title": "edit"
+      }
+    ]
+  }
+}

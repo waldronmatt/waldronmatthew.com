@@ -1,0 +1,56 @@
+{ 
+  "title": "Claim Form",
+  "info": {
+    "header": "Supplemental Health Claim Form",
+    "description": "Online supplemental claim form that reduces processing time.",
+    "features": [
+      {
+        "list": "WCAG Compliance"
+      },
+      {
+        "list": "Localization support"
+      },
+      {
+        "list": "Conditional field support"
+      }, 
+      {
+        "list": "Field validation, masking, and XSS prevention"
+      }, 
+      {
+        "list": "Section review and editing support"
+      }, 
+      {
+        "list": "Dynamically add/remove physician fields"
+      }
+    ],
+    "tools": "Next-Gen JavaScript, jQuery, Bootstrap4, HTML5, Sass, EJS, JSON",
+    "demo": {
+      "name": "View Claim Form",
+      "link": "https://www.cigna.com/individuals-families/member-resources/supplemental-health-claim-form"
+    }
+  },
+  "pictureData": {
+    "name": "form",
+    "path": "claim-form/",
+    "defaultExt": "png",
+    "lightbox": "claim-form",
+    "pictures": [
+      {
+        "filename": "claim-form-1",
+        "title": "section"
+      }, 
+      {
+        "filename": "claim-form-2",
+        "title": "review"
+      },
+      {
+        "filename": "claim-form-3",
+        "title": "add fields"
+      },
+      {
+        "filename": "claim-form-4",
+        "title": "locale support"
+      }
+    ]
+  }
+}

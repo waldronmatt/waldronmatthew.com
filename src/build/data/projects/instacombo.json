@@ -1,0 +1,50 @@
+{ 
+  "title": "Instacombo",
+  "info": {
+    "header": "Instacombo",
+    "description": "A website app that instantly combines your recent music, tweets, videos, posts, and listings.",
+    "features": [
+      {
+        "list": "Securely fetches media from Spotify, Twitter, YouTube, Instagram, and Etsy"
+      },
+      {
+        "list": "React inspired UI components increases site consistency and reusability"
+      }, 
+      {
+        "list": "Optimized loading performance for mobile/tablet"
+      },
+      {
+        "list": "Analytics integration with Google"
+      }
+    ],
+    "tools": "PHP7, GraphQL APIs, HTML5, CSS3, JavaScript, jQuery, Google Analytics"
+  },
+  "pictureData": {
+    "name": "Instacombo",
+    "path": "instacombo/",
+    "defaultExt": "png",
+    "lightbox": "instacombo",
+    "pictures": [
+      {
+        "filename": "sm-api-2",
+        "title": "preview"
+      }, 
+      {
+        "filename": "sm-api-4",
+        "title": "tracks"
+      },
+      {
+        "filename": "sm-api-6",
+        "title": "videos"
+      },
+      {
+        "filename": "sm-api-7",
+        "title": "posts"
+      },
+      {
+        "filename": "sm-api-10",
+        "title": "analytics"
+      }
+    ]
+  }
+}

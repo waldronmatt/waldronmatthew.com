@@ -1,0 +1,72 @@
+{ 
+    "title": "Search Integrations",
+    "info": {
+      "header": "Search App Integrations",
+      "description": "Integrated team's elastic search wrapper and fuzzy search library into existing sites.",
+      "links": [
+        {
+          "text": "Cigna.com",
+          "link": "https://www.cigna.com/search?query=cigna"
+        },
+        {
+          "text": "Cigna Medical Group Arizona",
+          "link": "https://www.cigna.com/cmgaz/find-care/"
+        },
+        {
+          "text": "Cigna UK",
+          "link": "https://www.cigna.co.uk/search.html?query=cigna"
+        },
+        {
+          "text": "Cigna Global",
+          "link": "https://www.cignaglobal.com/search?query=cigna"
+        },
+        {
+          "text": "Cigna Global Health",
+          "link": "https://www.cignaglobalhealth.com/na/en/search?query=cigna"
+        }
+      ],
+      "features": [
+        {
+          "list": "Cigna.com elastic search contains custom UI to support multiple data indexes (cigna.com & medical library)"
+        },
+        {
+          "list": "Cigna Medical Group Arizona search tool modified to support 'fuzzy' searching when exact records are not found."
+        },
+        {
+          "list": "Cigna UK, Cigna Global, and Cigna Global Health elastic searches modified to preserve existing UI site requirements."
+        }, 
+        {
+          "list": "Elastic search tools are polyfilled to support older browsers."
+        }
+      ],
+      "tools": "HTML5, Sass, Bootstrap4, Next-Gen JavaScript, jQuery"
+    },
+    "pictureData": {
+      "name": "search",
+      "path": "search-integrations/",
+      "defaultExt": "png",
+      "lightbox": "search-integrations",
+      "pictures": [
+        {
+          "filename": "si-1",
+          "title": "cigna.com"
+        }, 
+        {
+          "filename": "si-2",
+          "title": "cmgaz.com"
+        },
+        {
+          "filename": "si-3",
+          "title": "UK"
+        },
+        {
+          "filename": "si-4",
+          "title": "global"
+        },
+        {
+          "filename": "si-5",
+          "title": "global health"
+        }
+      ]
+    }
+  }
