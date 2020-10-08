@@ -24,7 +24,6 @@
     </a>
     <div id="perfundo-img<%= index %>" class="perfundo__overlay fadeIn">
       <figure class="perfundo__content perfundo__figure">
-        <img src="<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}-lg.${getExtension}`] %>" alt="Demo image">
         <div class="perfundo__image" style="background-image: url('<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}-lg.${getExtension}`] %>');"></div>
       </figure>
       <a href="<%= site.basePath %>projects/<%= getLightboxPath %>.html#perfundo-untarget" class="perfundo__close perfundo__control">Close</a>
