@@ -12,6 +12,13 @@
 
 @charset "UTF-8";
 
+/* Vendors */
+
+@import
+  'vendors/reset',
+  'vendors/sanitize',
+  'vendors/lightbox';
+
 /* Configurations and helpers */
 @import
   'abstracts/variables',
@@ -33,4 +40,4 @@
 @import
   'components/button',
   'components/link',
-  'components/lightbox';
+  'components/gallery';

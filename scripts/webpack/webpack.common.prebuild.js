@@ -47,8 +47,6 @@ module.exports = {
       { from:'./src/static/docs/', to: 'static/docs', },
       { from:'./src/static/favicons/', to: '', },
       // files you don't want webpack to compile go below (e.g. vendors)
-      { from:'./src/static/scss/vendors/_lightbox.scss', to: 'static/css/vendors/lightbox.css', },
-      { from:'./src/static/js/vendors/_lightbox.js', to: 'static/js/vendors/lightbox.js', },
     ]),
   ],
   performance : {

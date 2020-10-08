@@ -9,7 +9,8 @@
 
 @import
   'vendors/reset',
-  'vendors/sanitize';
+  'vendors/sanitize',
+  'vendors/lightbox';
 
 /* Configurations and helpers */
 @import
@@ -32,4 +33,4 @@
 @import
   'components/button',
   'components/link',
-  'components/lightbox';
+  'components/gallery';

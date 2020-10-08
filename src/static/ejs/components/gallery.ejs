@@ -1,11 +1,12 @@
 <% let getPath = data.pictureData.path; %>
+<% let getLightboxPath = data.pictureData.lightbox; %>
 <% let getExtension = data.pictureData.defaultExt; %>
 <% let getPicture = data.pictureData.pictures[0].filename; %>
 <% let manifestHasNextGenImage = site.assetsManifest[`static/images/${getPath}${getPicture}-lg.webp`]; %>
 
 <div class="gallery">
-  <% data.pictureData.pictures.forEach((picture) => { %>
-    <a href="<%= site.assetsManifest[`static/images/${getPath}${picture.filename}-lg.${getExtension}`] %>" class="default-width img-link" data-lightbox="<%= data.pictureData.lightbox %>" data-title="<%= picture.title %>">
+  <% data.pictureData.pictures.forEach((picture, index) => { %>
+    <a href="/projects/<%= getLightboxPath %>.html#perfundo-img<%= index %>" class="default-width img-link">
       <picture>
         <% sharedData.lightbox.fallbacks.forEach((fallback) => { %>
           <% if (manifestHasNextGenImage) { %>
@@ -21,5 +22,20 @@
         <p><%= picture.title %></p>
       </div>
     </a>
+    <div id="perfundo-img<%= index %>" class="perfundo__overlay fadeIn">
+      <figure class="perfundo__content perfundo__figure">
+        <img src="<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}-lg.${getExtension}`] %>" alt="Demo image">
+        <div class="perfundo__image" style="width: 640px;padding-top: 250px;background-image: url('<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}-lg.${getExtension}`] %>');"></div>
+      </figure>
+      <a href="#perfundo-untarget" class="perfundo__close perfundo__control">Close</a>
+      <% if (index === 0) { %>
+        <a class="perfundo__next perfundo__control" href="/projects/<%= getLightboxPath %>.html#perfundo-img<%= index + 1 %>">Next</a>
+      <% } else if (index === data.pictureData.pictures.length - 1) { %>
+        <a class="perfundo__prev perfundo__control" href="/projects/<%= getLightboxPath %>.html#perfundo-img<%= index - 1 %>">Prev</a>
+      <% } else { %>
+        <a class="perfundo__next perfundo__control" href="/projects/<%= getLightboxPath %>.html#perfundo-img<%= index + 1 %>">Next</a>
+        <a class="perfundo__prev perfundo__control" href="/projects/<%= getLightboxPath %>.html#perfundo-img<%= index - 1 %>">Prev</a>
+      <% } %>
+    </div>
   <% }) %>
 </div>

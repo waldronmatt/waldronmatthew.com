@@ -86,7 +86,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "lightbox2": "^2.11.1",
+    "perfundo": "^4.0.4",
     "sanitize.css": "^12.0.1"
   }
 }
