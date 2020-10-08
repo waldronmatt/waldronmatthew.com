@@ -1,6 +1,8 @@
 @import 'node_modules/perfundo/scss/with-icons.scss';
 
 .perfundo__image {
+  width: 640px;
+  padding-top: 100%;
   // override default
   background-size: contain !important;
   // center
