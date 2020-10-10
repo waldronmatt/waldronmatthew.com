@@ -22,7 +22,7 @@
         <p><%= picture.title %></p>
       </div>
     </a>
-    <div id="perfundo-img<%= index %>" class="perfundo__overlay fadeIn">
+    <div id="perfundo-img<%= index %>" class="perfundo__overlay">
       <figure class="perfundo__content perfundo__figure">
         <div class="perfundo__image" style="background-image: url('<%= site.basePath %><%= site.assetsManifest[`static/images/${getPath}${picture.filename}-lg.${getExtension}`] %>');"></div>
       </figure>

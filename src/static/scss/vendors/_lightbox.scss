@@ -22,7 +22,20 @@
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
 
+/*
+  -----
+*/
+
 .perfundo__figure::-webkit-scrollbar { /* WebKit */
   width: 0;
   height: 0;
+}
+
+.perfundo__overlay {
+  @include keyframes(fadein) {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  animation-name: fadein;
 }
