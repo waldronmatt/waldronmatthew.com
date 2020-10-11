@@ -1,3 +1,3 @@
-import { getProjects } from './utils/_get-projects';
+import { getProjects } from "./utils/_get-projects";
 
 export default getProjects();

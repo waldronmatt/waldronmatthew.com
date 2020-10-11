@@ -1,5 +1,5 @@
 /* Layouts */
-import './layouts/_footer';
+import "./layouts/_footer";
 
 /* Dynamic imports */
-import './_load-apps';
+import "./_load-apps";

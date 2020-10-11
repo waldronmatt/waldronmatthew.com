@@ -1,8 +1,8 @@
-export const fallbacks = [
+export default [
   {
-    "ext": "webp"
+    ext: "webp",
   },
   {
-    "ext": "png"
-  }
-]
+    ext: "png",
+  },
+];

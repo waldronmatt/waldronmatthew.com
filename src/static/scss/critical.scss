@@ -15,24 +15,20 @@
 /* Vendors */
 
 /* Configurations and helpers */
-@import
-  'abstracts/variables',
+@import 'abstracts/variables',
   'abstracts/mixins',
   'abstracts/breakpoints';
 
 /* Base styles */
-@import
-  'base/base',
+@import 'base/base',
   'base/fonts',
   'base/typography';
 
 /* Layouts */
-@import
-  'layouts/header',
+@import 'layouts/header',
   'layouts/footer';
 
 /* Components */
-@import
-  'components/button',
+@import 'components/button',
   'components/link',
   'components/gallery';
