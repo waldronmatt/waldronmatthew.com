@@ -37,6 +37,7 @@
   "_moduleAliases": {
     "@data": "src/build/data/projects"
   },
+  "sideEffects": true,
   "author": "Matthew Waldron (https://www.waldronmatthew.com)",
   "license": "MIT (Source Code)",
   "devDependencies": {
