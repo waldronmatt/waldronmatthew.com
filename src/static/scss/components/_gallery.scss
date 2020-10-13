@@ -5,6 +5,15 @@
 }
 
 .img-link {
+  /*
+    Reduce layout shifting (cls, a.k.a - content shifting) by setting a specific height
+    https://web.dev/optimize-cls/
+
+    If the content ends up making the element taller,
+    it can still do that, which isn’t great, but it’s slightly better than doing nothing.
+    https://css-tricks.com/content-jumping-avoid/#fixing-with-min-height
+  */
+  min-height: 100px;
   // positions text properly on picture tiles
   @include transform(translate3d(0, 0, 0));
 
@@ -23,6 +32,15 @@
   }
 
   img {
+    /*
+      Vertically center content w/ variable height in div
+      https://stackoverflow.com/questions/59309/how-to-vertically-center-content-with-variable-height-within-a-div
+    */
+    position: relative;
+    // move the inner div's top border to the half height of the outer div
+    top: 50%;
+    // move the inner div up by half its height
+    transform: translateY(-50%);
     max-height: 250px;
     width: 100%;
     object-fit: cover;
