@@ -6,17 +6,17 @@
 
 <div class="gallery">
   <% data.pictureData.pictures.forEach((picture, index) => { %>
-    <a href="<%= site.basePath %>projects/<%= getLightboxPath %>.html#perfundo-img<%= index %>" class="default-width img-link">
+    <a href="projects/<%= getLightboxPath %>.html#perfundo-img<%= index %>" class="default-width img-link">
       <picture>
         <% sharedData.lightbox.fallbacks.forEach((fallback) => { %>
           <% if (manifestHasNextGenImage) { %>
-            <source media="(max-width: 320px)" srcset="<%= site.basePath %><%= site.assetsManifest[`static/img/${getPath}${picture.filename}-xs.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">
-            <source media="(min-width: 321px) and (max-width: 767px)" srcset="<%= site.basePath %><%= site.assetsManifest[`static/img/${getPath}${picture.filename}-sm.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">
-            <source media="(min-width: 768px) and (max-width: 1439px)" srcset="<%= site.basePath %><%= site.assetsManifest[`static/img/${getPath}${picture.filename}-md.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">
-            <source media="(min-width: 1440px)" srcset="<%= site.basePath %><%= site.assetsManifest[`static/img/${getPath}${picture.filename}-lg.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">
+            <source media="(max-width: 320px)" srcset="<%= site.assetsManifest[`static/img/${getPath}${picture.filename}-xs.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">
+            <source media="(min-width: 321px) and (max-width: 767px)" srcset="<%= site.assetsManifest[`static/img/${getPath}${picture.filename}-sm.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">
+            <source media="(min-width: 768px) and (max-width: 1439px)" srcset="<%= site.assetsManifest[`static/img/${getPath}${picture.filename}-md.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">
+            <source media="(min-width: 1440px)" srcset="<%= site.assetsManifest[`static/img/${getPath}${picture.filename}-lg.${fallback.ext}`] %>" type="image/<%= fallback.ext %>">
           <% } %>
         <% }) %>
-        <img src="<%= site.basePath %><%= site.assetsManifest[`static/img/${getPath}${picture.filename}-lg.${getExtension}`] %>" alt="<%= picture.title %>">
+        <img src="<%= site.assetsManifest[`static/img/${getPath}${picture.filename}-lg.${getExtension}`] %>" alt="<%= picture.title %>">
       </picture>
       <div class="tile">
         <p><%= picture.title %></p>
@@ -24,16 +24,16 @@
     </a>
     <div id="perfundo-img<%= index %>" class="perfundo__overlay">
       <figure class="perfundo__content perfundo__figure">
-        <div class="perfundo__image" style="background-image: url('<%= site.basePath %><%= site.assetsManifest[`static/img/${getPath}${picture.filename}-lg.${getExtension}`] %>');"></div>
+        <div class="perfundo__image" style="background-image: url('<%= site.assetsManifest[`static/img/${getPath}${picture.filename}-lg.${getExtension}`] %>');"></div>
       </figure>
-      <a href="<%= site.basePath %>projects/<%= getLightboxPath %>.html#perfundo-untarget" class="perfundo__close perfundo__control">Close</a>
+      <a href="projects/<%= getLightboxPath %>.html#perfundo-untarget" class="perfundo__close perfundo__control">Close</a>
       <% if (index === 0) { %>
-        <a class="perfundo__next perfundo__control" href="<%= site.basePath %>projects/<%= getLightboxPath %>.html#perfundo-img<%= index + 1 %>">Next</a>
+        <a class="perfundo__next perfundo__control" href="projects/<%= getLightboxPath %>.html#perfundo-img<%= index + 1 %>">Next</a>
       <% } else if (index === data.pictureData.pictures.length - 1) { %>
-        <a class="perfundo__prev perfundo__control" href="<%= site.basePath %>projects/<%= getLightboxPath %>.html#perfundo-img<%= index - 1 %>">Prev</a>
+        <a class="perfundo__prev perfundo__control" href="projects/<%= getLightboxPath %>.html#perfundo-img<%= index - 1 %>">Prev</a>
       <% } else { %>
-        <a class="perfundo__next perfundo__control" href="<%= site.basePath %>projects/<%= getLightboxPath %>.html#perfundo-img<%= index + 1 %>">Next</a>
-        <a class="perfundo__prev perfundo__control" href="<%= site.basePath %>projects/<%= getLightboxPath %>.html#perfundo-img<%= index - 1 %>">Prev</a>
+        <a class="perfundo__next perfundo__control" href="projects/<%= getLightboxPath %>.html#perfundo-img<%= index + 1 %>">Next</a>
+        <a class="perfundo__prev perfundo__control" href="projects/<%= getLightboxPath %>.html#perfundo-img<%= index - 1 %>">Prev</a>
       <% } %>
     </div>
   <% }) %>
