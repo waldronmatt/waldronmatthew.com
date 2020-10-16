@@ -22,29 +22,29 @@ export const getProjects = () => {
 
     const getFallbacks = (getPath, getFilename) => {
       const manifestHasNextGenImage =
-        assetsManifest[`static/images/${getPath}${getFilename}-lg.webp`];
+        assetsManifest[`static/img/${getPath}${getFilename}-lg.webp`];
       let html = "";
       if (manifestHasNextGenImage) {
         fallbacks.forEach((fallback) => {
           html += `
           <source media="(max-width: 320px)" srcset="${
             assetsManifest[
-              `static/images/${getPath}${getFilename}-xs.${fallback.ext}`
+              `static/img/${getPath}${getFilename}-xs.${fallback.ext}`
             ]
           }" type="image/${fallback.ext}">
           <source media="(min-width: 321px) and (max-width: 767px)" srcset="${
             assetsManifest[
-              `static/images/${getPath}${getFilename}-sm.${fallback.ext}`
+              `static/img/${getPath}${getFilename}-sm.${fallback.ext}`
             ]
           }" type="image/${fallback.ext}">
           <source media="(min-width: 768px) and (max-width: 1439px)" srcset="${
             assetsManifest[
-              `static/images/${getPath}${getFilename}-md.${fallback.ext}`
+              `static/img/${getPath}${getFilename}-md.${fallback.ext}`
             ]
           }" type="image/${fallback.ext}">
           <source media="(min-width: 1440px)" srcset="${
             assetsManifest[
-              `static/images/${getPath}${getFilename}-lg.${fallback.ext}`
+              `static/img/${getPath}${getFilename}-lg.${fallback.ext}`
             ]
           }" type="image/${fallback.ext}">
           `;
@@ -68,7 +68,7 @@ export const getProjects = () => {
             ${getFallbacks(getPath, getFilename)}
             <img src="${
               assetsManifest[
-                `static/images/${getPath}${getFilename}-lg.${getDefaultExt}`
+                `static/img/${getPath}${getFilename}-lg.${getDefaultExt}`
               ]
             }" alt="${getPictureName}">
           </picture>

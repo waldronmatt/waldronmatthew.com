@@ -6,15 +6,13 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 /*
   We have a prebuild script so we can
   use assets (images, etc.) for use in javascript files.
-
   We must create a manifest
   before webpack grabs js files in webpack.common
-
   More information can be found in ignore.js
 */
 
 module.exports = {
-  // we need to specify an entry so this file can run. 
+  // we need to specify an entry so this file can run.
   entry: ['./ignore.js'],
   output: {
     filename: '[name].js',
@@ -31,7 +29,7 @@ module.exports = {
       filter: (file) => {
         return file.name.indexOf('main.js')
       },
-      /* 
+      /*
         Remove hash in manifest key
         https://github.com/webpack-contrib/copy-webpack-plugin/issues/104
       */
@@ -42,11 +40,8 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       // copy over misc assets
-      { from:'./src/static/fonts/', to: 'static/fonts', },
-      { from:'./src/static/vendors/', to: 'static/vendors', },
-      { from:'./src/static/docs/', to: 'static/docs', },
-      { from:'./src/static/favicons/', to: '', },
-      // files you don't want webpack to compile go below (e.g. vendors)
+      { from:'./src/static/fonts/', to: 'static/fonts/', },
+      // files you don't want webpack to compile go below
     ]),
   ],
   performance : {

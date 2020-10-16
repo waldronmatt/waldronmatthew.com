@@ -3,7 +3,7 @@
     <% sharedData.footer.links.forEach((el) => { %>
       <div class="link">
         <% if (el.text === 'Resume') { %>
-          <a href="<%= site.basePath %><%= el.link %>" target="_blank"><%= el.text %></a>
+          <a href="<%= el.link %>" target="_blank"><%= el.text %></a>
         <% } else { %>
         <a href="<%= el.link %>" target="_blank" rel="noreferrer"><%= el.text %></a>
         <% } %>
@@ -15,7 +15,7 @@
     <a href="<%= sharedData.footer.centerLink %>" target="_blank" rel="noreferrer"><%= sharedData.footer.centerText %></a>
 
     <small>
-      <a href="<%= site.basePath %>web.html">&copy;&nbsp;<%= sharedData.footer.leftText %>&nbsp;<span id="footer-copyright"></span>&nbsp;<%= sharedData.footer.rightText %></a>
+      <a href="web.html">&copy;&nbsp;<%= sharedData.footer.leftText %>&nbsp;<span id="footer-copyright"></span>&nbsp;<%= sharedData.footer.rightText %></a>
     </small>
   </div>
 </footer>

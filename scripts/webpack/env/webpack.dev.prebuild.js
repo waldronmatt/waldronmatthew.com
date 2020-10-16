@@ -8,12 +8,11 @@ module.exports = merge(common, {
   plugins: [
     /*
       Provides an intermediate caching step for modules
-
       Not using on prod builds because Netlify stalls out a while
     */
     new HardSourceWebpackPlugin(),
     new CopyWebpackPlugin([
-      { from:'./src/static/images/', to:'static/images/', },
+      { from:'./src/static/img/', to:'static/img/', },
     ]),
   ],
 });
