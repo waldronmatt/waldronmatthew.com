@@ -1,4 +1,4 @@
-{ 
+{
   "header": {
     "image": {
       "smName": "logo-sm",
@@ -7,7 +7,7 @@
       "fallback": [
         {
           "ext": "webp"
-        }, 
+        },
         {
           "ext": "png"
         }

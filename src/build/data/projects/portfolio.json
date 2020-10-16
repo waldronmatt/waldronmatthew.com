@@ -1,4 +1,4 @@
-{ 
+{
   "title": "Portfolio Template",
   "info": {
     "header": "Portfolio Template",
@@ -26,7 +26,7 @@
       {
         "filename": "portfolio-1",
         "title": "landing"
-      }, 
+      },
       {
         "filename": "portfolio-2",
         "title": "pictures"

@@ -1,4 +1,4 @@
-{ 
+{
   "title": "Claim Form",
   "info": {
     "header": "Supplemental Health Claim Form",
@@ -12,13 +12,13 @@
       },
       {
         "list": "Conditional field support"
-      }, 
+      },
       {
         "list": "Field validation, masking, and XSS prevention"
-      }, 
+      },
       {
         "list": "Section review and editing support"
-      }, 
+      },
       {
         "list": "Dynamically add/remove physician fields"
       }
@@ -38,7 +38,7 @@
       {
         "filename": "claim-form-1",
         "title": "section"
-      }, 
+      },
       {
         "filename": "claim-form-2",
         "title": "review"

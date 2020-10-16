@@ -1,4 +1,4 @@
-{ 
+{
   "title": "Node.js File Crawler",
   "info": {
     "header": "Node.js File Crawler",
@@ -25,7 +25,7 @@
       {
         "filename": "file-crawler-1",
         "title": "app"
-      }, 
+      },
       {
         "filename": "file-crawler-2",
         "title": "scan"
@@ -39,5 +39,5 @@
         "title": "view"
       }
     ]
-  } 
+  }
 }

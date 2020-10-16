@@ -1,4 +1,4 @@
-{ 
+{
     "title": "Search Integrations",
     "info": {
       "header": "Search App Integrations",
@@ -34,7 +34,7 @@
         },
         {
           "list": "Cigna UK, Cigna Global, and Cigna Global Health elastic searches modified to preserve existing UI site requirements."
-        }, 
+        },
         {
           "list": "Elastic search tools are polyfilled to support older browsers."
         }
@@ -50,7 +50,7 @@
         {
           "filename": "si-1",
           "title": "cigna.com"
-        }, 
+        },
         {
           "filename": "si-2",
           "title": "cmgaz.com"

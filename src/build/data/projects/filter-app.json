@@ -1,4 +1,4 @@
-{ 
+{
   "title": "Filter App",
   "info": {
     "header": "Filter App",
@@ -19,7 +19,7 @@
       {
         "filename": "filter-app-1",
         "title": "instructions"
-      }, 
+      },
       {
         "filename": "filter-app-2",
         "title": "demo"

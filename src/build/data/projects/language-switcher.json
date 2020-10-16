@@ -1,4 +1,4 @@
-{ 
+{
   "title": "Language Switcher",
   "info": {
     "header": "Language Switcher",
@@ -26,11 +26,11 @@
       {
         "filename": "lang-switcher-1",
         "title": "switcher"
-      }, 
+      },
       {
         "filename": "lang-switcher-2",
         "title": "translation"
-      }, 
+      },
       {
         "filename": "lang-switcher-3",
         "title": "spanish"

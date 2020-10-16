@@ -1,4 +1,4 @@
-{ 
+{
   "title": "Music Website Template",
   "info": {
     "header": "Music Website Template",
@@ -6,10 +6,10 @@
     "features": [
       {
         "list": "Mailing list form, contact form"
-      }, 
+      },
       {
         "list": "Responsive picture modal, merch section"
-      }, 
+      },
       {
         "list": "Local music player, YouTube video player"
       },
@@ -32,7 +32,7 @@
       {
         "filename": "music1",
         "title": "music"
-      }, 
+      },
       {
         "filename": "music2",
         "title": "merch"

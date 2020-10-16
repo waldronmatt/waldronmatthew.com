@@ -3,7 +3,7 @@
     "fallbacks": [
       {
         "ext": "webp"
-      }, 
+      },
       {
         "ext": "png"
       }

@@ -1,4 +1,4 @@
-{ 
+{
   "title": "FullCalendar Integration",
   "info": {
     "header": "FullCalendar Back-end Integration",
@@ -9,7 +9,7 @@
       },
       {
         "list": "Recurring event capabilities"
-      }, 
+      },
       {
         "list": "Multi-day recurrences supported"
       }
@@ -29,7 +29,7 @@
       {
         "filename": "fullcal-1",
         "title": "click"
-      }, 
+      },
       {
         "filename": "fullcal-2",
         "title": "add"

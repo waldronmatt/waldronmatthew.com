@@ -1,4 +1,4 @@
-{ 
+{
   "title": "Confluence Apps",
   "info": {
     "header": "Interactive Org Chart and Navigation Bar",
@@ -32,7 +32,7 @@
       {
         "filename": "org-chart-1",
         "title": "expand"
-      }, 
+      },
       {
         "filename": "org-chart-3",
         "title": "collapse"

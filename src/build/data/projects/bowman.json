@@ -1,4 +1,4 @@
-{ 
+{
   "title": "Bowman",
   "info": {
     "header": "Bowman",
@@ -35,7 +35,7 @@
       {
         "filename": "bowman-1",
         "title": "build"
-      }, 
+      },
       {
         "filename": "bowman-2",
         "title": "score"

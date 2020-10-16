@@ -1,4 +1,4 @@
-{ 
+{
   "title": "Instacombo",
   "info": {
     "header": "Instacombo",
@@ -9,7 +9,7 @@
       },
       {
         "list": "React inspired UI components increases site consistency and reusability"
-      }, 
+      },
       {
         "list": "Optimized loading performance for mobile/tablet"
       },
@@ -28,7 +28,7 @@
       {
         "filename": "sm-api-2",
         "title": "preview"
-      }, 
+      },
       {
         "filename": "sm-api-4",
         "title": "tracks"
