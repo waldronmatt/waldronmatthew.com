@@ -9,8 +9,8 @@
   },
   "homepage": "https://www.waldronmatthew.com",
   "scripts": {
-    "dev": "run-s postinstall webpack-prebuild-dev webpack-dev render-page-dev browsersync",
-    "build": "run-s postinstall webpack-prebuild-prod webpack-prod render-page-prod",
+    "dev": "run-s webpack-prebuild-dev webpack-dev render-page-dev serve",
+    "build": "run-s webpack-prebuild-prod webpack-prod render-page-prod",
     "rebuild": "run-s webpack-prebuild-dev webpack-dev render-page-dev",
     "webpack-prebuild-dev": "webpack --config ./scripts/webpack/env/webpack.dev.prebuild.js",
     "webpack-prebuild-prod": "webpack --config  ./scripts/webpack/env/webpack.prod.prebuild.js",
@@ -18,8 +18,7 @@
     "webpack-prod": "webpack --config ./scripts/webpack/env/webpack.prod.js",
     "render-page-dev": "node ./scripts/render/page.dev.js",
     "render-page-prod": "node ./scripts/render/page.prod.js",
-    "browsersync": "node ./scripts/browsersync",
-    "postinstall": "link-module-alias"
+    "serve": "node ./scripts/browsersync"
   },
   "keywords": [
     "potfolio",
@@ -33,9 +32,6 @@
     "plugins": {
       "autoprefixer": {}
     }
-  },
-  "_moduleAliases": {
-    "@data": "src/build/data/projects"
   },
   "sideEffects": true,
   "author": "Matthew Waldron (https://www.waldronmatthew.com)",
@@ -60,16 +56,14 @@
     "eslint-loader": "^4.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.1.4",
+    "favicons-webpack-plugin": "^4.2.0",
     "front-matter": "^3.1.0",
     "fs-extra": "^9.0.0",
     "hard-source-webpack-plugin": "^0.13.1",
     "imagemin-webp-webpack-plugin": "^3.3.2",
     "imagemin-webpack-plugin": "^2.4.2",
-    "install": "^0.13.0",
-    "link-module-alias": "^1.2.0",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.1",
-    "npm": "^6.14.7",
     "npm-run-all": "^4.1.5",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
@@ -80,7 +74,6 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.17.2",
     "stylelint-webpack-plugin": "^2.0.0",
-    "stylint": "^2.0.0",
     "terser-webpack-plugin": "^3.0.0",
     "webpack": "^4.43.0",
     "webpack-clean": "^1.2.5",

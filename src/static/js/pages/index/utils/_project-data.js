@@ -1,17 +1,17 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import bowman from "@data/bowman.json";
-import searchIntegrations from "@data/search-integrations.json";
-import claimForm from "@data/claim-form.json";
-import instaCombo from "@data/instacombo.json";
-import confluenceApps from "@data/confluence-apps.json";
-import fileCrawler from "@data/file-crawler.json";
-import languageSwitcher from "@data/language-switcher.json";
-import filterApp from "@data/filter-app.json";
-import fullCalendar from "@data/fullcalendar.json";
-import musicWebsite from "@data/music-website.json";
-import webexDashboard from "@data/webex-dashboard.json";
-import personalPortfolio from "@data/portfolio.json";
-import blogWebsite from "@data/blog.json";
+/* eslint-disable import/no-useless-path-segments */
+import bowman from "./../../../../../build/data/projects/bowman.json";
+import searchIntegrations from "./../../../../../build/data/projects/search-integrations.json";
+import claimForm from "./../../../../../build/data/projects/claim-form.json";
+import instaCombo from "./../../../../../build/data/projects/instacombo.json";
+import confluenceApps from "./../../../../../build/data/projects/confluence-apps.json";
+import fileCrawler from "./../../../../../build/data/projects/file-crawler.json";
+import languageSwitcher from "./../../../../../build/data/projects/language-switcher.json";
+import filterApp from "./../../../../../build/data/projects/filter-app.json";
+import fullCalendar from "./../../../../../build/data/projects/fullcalendar.json";
+import musicWebsite from "./../../../../../build/data/projects/music-website.json";
+import webexDashboard from "./../../../../../build/data/projects/webex-dashboard.json";
+import personalPortfolio from "./../../../../../build/data/projects/portfolio.json";
+import blogWebsite from "./../../../../../build/data/projects/blog.json";
 
 export default [
   bowman,
