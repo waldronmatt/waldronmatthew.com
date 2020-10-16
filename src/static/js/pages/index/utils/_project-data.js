@@ -6,12 +6,9 @@ import instaCombo from "./../../../../../build/data/projects/instacombo.json";
 import confluenceApps from "./../../../../../build/data/projects/confluence-apps.json";
 import fileCrawler from "./../../../../../build/data/projects/file-crawler.json";
 import languageSwitcher from "./../../../../../build/data/projects/language-switcher.json";
-import filterApp from "./../../../../../build/data/projects/filter-app.json";
 import fullCalendar from "./../../../../../build/data/projects/fullcalendar.json";
 import musicWebsite from "./../../../../../build/data/projects/music-website.json";
 import webexDashboard from "./../../../../../build/data/projects/webex-dashboard.json";
-import personalPortfolio from "./../../../../../build/data/projects/portfolio.json";
-import blogWebsite from "./../../../../../build/data/projects/blog.json";
 
 export default [
   bowman,
@@ -21,10 +18,7 @@ export default [
   confluenceApps,
   fileCrawler,
   languageSwitcher,
-  filterApp,
   fullCalendar,
   musicWebsite,
   webexDashboard,
-  personalPortfolio,
-  blogWebsite,
 ];
