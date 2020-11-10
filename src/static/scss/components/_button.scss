@@ -7,18 +7,18 @@
   button {
     @include link-important;
 
-    font-family: inherit;
-    background-color: $white;
-    padding: 0.8em 1.2em 0.8em 1.2em;
-    color: $dark-blue;
-    border: solid 4px $dark-blue;
-    cursor: pointer;
-
     @include transition(all 0.35s ease);
 
+    background-color: $white;
+    border: solid 4px $dark-blue;
+    color: $dark-blue;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0.8em 1.2em;
+
     @include on-event {
-      color: $white;
       background-color: $dark-blue;
+      color: $white;
       text-decoration: none;
     }
   }

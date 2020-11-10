@@ -1,4 +1,4 @@
-// general purpose breakpoints
+// General purpose breakpoints
 @mixin xs { @media (min-width: #{$screen-xs-min}) { @content; } }
 
 @mixin sm { @media (min-width: #{$screen-sm-min}) { @content; } }
@@ -9,8 +9,6 @@
 
 @mixin xl { @media (min-width: #{$screen-xl-min}) { @content; } }
 
-// range breakpoints
-// used for unique picture sizing via gallery component
 @mixin bp-sm {
   @media all and (max-width: $screen-xs-min) {
     @content;

@@ -1,5 +1,5 @@
-// set up a decent box model on the root element
 html {
+  // set up a decent box model on the root element
   box-sizing: border-box;
 }
 
@@ -11,9 +11,9 @@ body {
 }
 
 main {
-  margin: $default-margin 0;
-
   @include center;
+
+  margin: $default-margin 0;
 }
 
 section {

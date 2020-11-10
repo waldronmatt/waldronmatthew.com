@@ -1,41 +1,42 @@
-@import 'node_modules/perfundo/scss/with-icons.scss';
+/* stylelint-disable selector-class-pattern */
+
+@import 'node_modules/perfundo/scss/with-icons';
 
 .perfundo__image {
-  width: 640px;
-  padding-top: 100%;
-  // override default
-  background-size: contain !important;
-  // center
-  background-repeat: no-repeat;
   background-position: center center;
+
+  /* center */
+  background-repeat: no-repeat;
+
+  /* override default */
+  background-size: contain !important;
+  padding-top: 100%;
+  width: 640px;
 }
 
 /*
-  Cross browser support to hide the lightbox image scrollbar
-  while also still enabling it for use on different screen orientations
+  Cross browser support to hide the lightbox image scrollbar while also still enabling it for use on different screen orientations
   https://stackoverflow.com/a/49278385
-
 */
+
 .perfundo__figure {
+  -ms-overflow-style: none;  // Internet Explorer 10+
   overflow-y: scroll;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none; // Firefox
 }
 
-/*
-  -----
-*/
+/* ----- */
 
-.perfundo__figure::-webkit-scrollbar { /* WebKit */
-  width: 0;
+.perfundo__figure::-webkit-scrollbar { // WebKit
   height: 0;
+  width: 0;
 }
 
 .perfundo__overlay {
+  animation-name: fadein;
+
   @include keyframes(fadein) {
     from { opacity: 0; }
     to { opacity: 1; }
   }
-
-  animation-name: fadein;
 }

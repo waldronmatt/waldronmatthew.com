@@ -1,47 +1,49 @@
+/* stylelint-disable max-nesting-depth */
+
 .link-container {
   @include grid-center;
+
+  margin: $default-margin 0;
 
   @include sm {
     @include flex-center;
   }
 
-  margin: $default-margin 0;
-
   // we need parent so the link effect occurs on target
   .link {
+    @include transition(all 0.35s ease);
+
     margin: $default-margin;
     text-align: center;
 
-    @include transition(all 0.35s ease);
+    @include on-event {
+      @include transition(all 0.35s ease);
+
+      background: #ff0;
+
+      ::after {
+        @include transition(width 0.35s);
+
+        width: 50%;
+      }
+    }
 
     a {
-      padding-bottom: 0.8em;
-
       @include link-important;
       @include transition(all 0.35s ease);
+
+      padding-bottom: 0.8em;
     }
 
     a::after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: $default-letter-spacing;
+      @include transition(all 0.35s ease);
+
       border-bottom: solid 0.2em;
       border-color: $dark-blue;
-
-      @include transition(all 0.35s ease);
-    }
-
-    @include on-event {
-      background: #ff0;
-
-      @include transition(all 0.35s ease);
-
-      ::after {
-        width: 50%;
-
-        @include transition(width 0.35s);
-      }
+      content: '';
+      display: block;
+      height: $default-letter-spacing;
+      width: 100%;
     }
   }
 }

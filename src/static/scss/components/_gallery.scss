@@ -1,3 +1,5 @@
+/* stylelint-disable max-nesting-depth */
+
 .gallery {
   @include flex-center;
 
@@ -5,63 +7,63 @@
 }
 
 .img-link {
-  /*
-    Reduce layout shifting (cls, a.k.a - content shifting) by setting a specific height
-    https://web.dev/optimize-cls/
-
-    If the content ends up making the element taller,
-    it can still do that, which isn’t great, but it’s slightly better than doing nothing.
-    https://css-tricks.com/content-jumping-avoid/#fixing-with-min-height
-  */
-  min-height: 100px;
   // positions text properly on picture tiles
   @include transform(translate3d(0, 0, 0));
 
+  /*
+    Reduce layout shifting (cls, a.k.a - content shifting) by setting a specific height https://web.dev/optimize-cls/
+    If the content ends up making the element taller, it can still do that, which isn’t great, but it’s slightly better than doing nothing.
+    https://css-tricks.com/content-jumping-avoid/#fixing-with-min-height
+  */
+  min-height: 100px;
+
   @include on-event {
     img {
-      opacity: 0.5;
-
       @include transition(ease-in-out 0.5s);
+
+      opacity: 0.5;
     }
 
     .tile {
-      background-color: rgba(0, 0, 0, 1);
-
       @include transition(ease-in-out 0.5s);
+
+      background-color: rgba(0, 0, 0, 1);
     }
   }
 
   img {
+    @include transition(ease-in-out 0.5s);
+
     /*
       Vertically center content w/ variable height in div
       https://stackoverflow.com/questions/59309/how-to-vertically-center-content-with-variable-height-within-a-div
     */
+    max-height: 250px;
+    object-fit: cover;
     position: relative;
+
     // move the inner div's top border to the half height of the outer div
     top: 50%;
+
     // move the inner div up by half its height
     transform: translateY(-50%);
-    max-height: 250px;
     width: 100%;
-    object-fit: cover;
-
-    @include transition(ease-in-out 0.5s);
   }
 
   .tile {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $white;
-    background-color: rgba(0, 0, 0, 0.7);
-
     @include transition(ease-in-out 0.5s);
 
+    background-color: rgba(0, 0, 0, 0.7);
+    color: $white;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
     p {
-      text-align: center;
-      padding: 0.25em;
       letter-spacing: $default-letter-spacing;
+      padding: 0.25em;
+      text-align: center;
       word-break: initial;
 
       @include md {
