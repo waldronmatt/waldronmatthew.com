@@ -14,7 +14,10 @@ module.exports = merge(common, {
     // compress images (might take a while if there's a lot)
     new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
     new ImageminWebpWebpackPlugin(),
-    // generate optimized favicons for different devices (might take a while)
-    new FaviconsWebpackPlugin(),
+    // generate optimized favicons for different devices
+    new FaviconsWebpackPlugin({
+      // remove mode to enable default 'webapp' for comprehensive favicon generation
+      mode: 'light',
+    }),
   ],
 });
