@@ -6,7 +6,7 @@ import fallbacks from "./_fallbacks";
 // eslint-disable-next-line import/prefer-default-export
 export const getProjects = () => {
   let index = 0;
-  let limit = 3;
+  let limit = 9;
   const loadMore = document.getElementById("loadMore");
   const loadMoreParent = document.getElementById("loadMoreParent");
 
