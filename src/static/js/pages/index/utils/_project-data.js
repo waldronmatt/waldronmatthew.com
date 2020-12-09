@@ -7,7 +7,6 @@ import confluenceApps from "./../../../../../build/data/projects/confluence-apps
 import fileCrawler from "./../../../../../build/data/projects/file-crawler.json";
 import fullCalendar from "./../../../../../build/data/projects/fullcalendar.json";
 import musicWebsite from "./../../../../../build/data/projects/music-website.json";
-import webexDashboard from "./../../../../../build/data/projects/webex-dashboard.json";
 
 export default [
   bowman,
@@ -18,5 +17,4 @@ export default [
   fileCrawler,
   fullCalendar,
   musicWebsite,
-  webexDashboard,
 ];
