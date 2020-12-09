@@ -5,7 +5,6 @@ import claimForm from "./../../../../../build/data/projects/claim-form.json";
 import instaCombo from "./../../../../../build/data/projects/instacombo.json";
 import confluenceApps from "./../../../../../build/data/projects/confluence-apps.json";
 import fileCrawler from "./../../../../../build/data/projects/file-crawler.json";
-import languageSwitcher from "./../../../../../build/data/projects/language-switcher.json";
 import fullCalendar from "./../../../../../build/data/projects/fullcalendar.json";
 import musicWebsite from "./../../../../../build/data/projects/music-website.json";
 import webexDashboard from "./../../../../../build/data/projects/webex-dashboard.json";
@@ -17,7 +16,6 @@ export default [
   instaCombo,
   confluenceApps,
   fileCrawler,
-  languageSwitcher,
   fullCalendar,
   musicWebsite,
   webexDashboard,
