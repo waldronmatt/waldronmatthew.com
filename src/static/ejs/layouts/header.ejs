@@ -1,17 +1,6 @@
-<% let image = sharedData.header.image; %>
-<% let manifestHasNextGenImage = site.assetsManifest[`static/img/logo-sm.webp`]; %>
-
 <header>
-  <a href="<%= site.basePath %>">
-    <picture>
-      <% image.fallback.forEach((el) => { %>
-        <% if (manifestHasNextGenImage) { %>
-          <source media="(min-width: 1024px)" srcset="<%= site.assetsManifest[`static/img/${image.lgName}.${el.ext}`] %>" type="image/<%= el.ext %>">
-          <source srcset="<%= site.assetsManifest[`static/img/${image.smName}.${el.ext}`] %>" type="image/<%= el.ext %>">
-        <% } %>
-      <% }) %>
-      <source media="(min-width: 1024px)" srcset="<%= site.assetsManifest[`static/img/${image.lgName}.png`] %>" type="image/png">
-      <img src="<%= site.assetsManifest[`static/img/${image.smName}.png`] %>" alt="<%= image.alt %>">
-    </picture>
+  <a href="/">
+    <h1>Matthew Waldron</h1>
+    <h2>Front-End Developer</h2>
   </a>
 </header>
