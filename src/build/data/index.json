@@ -1,6 +1,16 @@
 {
   "title": "Homepage",
-  "header": "Matthew Waldron",
-  "description": "Front-End Developer",
-  "button": "Load More"
+  "welcome": "Welcome!",
+  "first": "Matt",
+  "last": "Waldron",
+  "title1": "Front End",
+  "title2": "Developer",
+  "resume": "Resume",
+  "linkedin": "Linkedin",
+  "github": "GitHub",
+  "twitter": "Twitter",
+  "site": "Enter Site",
+  "copyright": "©",
+  "painting": "Grande composizione A con nero, rosso, grigio, giallo e blu",
+  "artist": "Piet Mondrian"
 }
