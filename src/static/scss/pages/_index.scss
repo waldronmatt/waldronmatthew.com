@@ -3,25 +3,27 @@
 // Grande composizione A con nero, rosso, grigio, giallo e blu, 1919-1920
 // Piet Mondrian
 
-$grey: #c0c0c0;
+$gray: #c0c0c0;
 $red: #ff0000;
 $blue: #0000ff;
 $yellow: #ffff00;
 
+body {
+  margin: 0;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
-  height: calc(100vh - 2.68em);
+  height: 100vh;
   display: grid;
-  border: none;
   grid-template-columns: repeat(60, 1fr);
   grid-template-rows: repeat(60, 1fr);
 }
 
 [class^="square"] {
   display: inline-grid;
-  justify-items: center;
-  align-items: center;
+  place-content: center;
   border: 3px solid $black;
   padding: 0.5em;
   text-align: center;
@@ -43,7 +45,7 @@ $yellow: #ffff00;
   }
   &-2 {
     border-top: none;
-
+    background-color: $gray;
     grid-column: 7 / 25;
     grid-row: 1 / 5;
   }
@@ -74,27 +76,8 @@ $yellow: #ffff00;
     grid-row: 5 / 15;
   }
   &-8 {
-    color: $black;
-    background-color: $yellow;
     grid-column: 25 / 37;
     grid-row: 10 / 15;
-
-    text-decoration: none;
-
-    @include on-event {
-      background-color: $black;
-      color: $white;
-
-      h3 {
-        border-bottom: 2px solid $white;
-        padding-bottom: 0.25em;
-      }
-    }
-
-    h3 {
-      border-bottom: 2px solid $black;
-      padding-bottom: 0.25em;
-    }
   }
   &-9 {
     grid-column: 37 / 49;
@@ -103,13 +86,25 @@ $yellow: #ffff00;
   &-10 {
     border-left: none;
     grid-column: 1 / 7;
-    grid-row: 15 / 35;
+    grid-row: 15 / 36;
   }
   &-11 {
     color: $white;
     background-color: $blue;
     grid-column: 7 / 25;
     grid-row: 15 / 26;
+
+    text-decoration: none;
+
+    h3 {
+      border-bottom: 2px solid $white;
+      padding-bottom: 0.25em;
+    }
+
+    @include on-event {
+      background-color: $black;
+      color: $white;
+    }
   }
   &-12 {
     grid-column: 25 / 37;
@@ -117,7 +112,7 @@ $yellow: #ffff00;
   }
   &-13 {
     color: $black;
-    background-color: $grey;
+    background-color: $gray;
     grid-column: 37 / 49;
     grid-row: 15 / 26;
 
@@ -129,7 +124,7 @@ $yellow: #ffff00;
     }
 
     @include on-event {
-      background-color: $blue;
+      background-color: $red;
       color: $white;
 
       h3 {
@@ -139,12 +134,12 @@ $yellow: #ffff00;
   }
   &-14 {
     grid-column: 49 / 55;
-    grid-row: 15 / 45;
+    grid-row: 15 / 46;
   }
   &-15 {
     border-right: none;
     grid-column: 55 / 61;
-    grid-row: 15 / 45;
+    grid-row: 15 / 46;
     h2 {
       writing-mode: vertical-rl;
       text-orientation: upright;
@@ -152,12 +147,12 @@ $yellow: #ffff00;
   }
   &-16 {
     grid-column: 7 / 25;
-    grid-row: 26 / 35;
+    grid-row: 26 / 36;
   }
   &-17 {
     color: $black;
     grid-column: 25 / 37;
-    grid-row: 26 / 35;
+    grid-row: 26 / 36;
 
     text-decoration: none;
 
@@ -176,12 +171,12 @@ $yellow: #ffff00;
     color: $white;
     background-color: $black;
     grid-column: 37 / 49;
-    grid-row: 26 / 45;
+    grid-row: 26 / 46;
 
     text-decoration: none;
 
     @include on-event {
-      background-color: $red;
+      background-color: $blue;
       color: $white;
     }
 
@@ -196,18 +191,18 @@ $yellow: #ffff00;
     border-left: none;
 
     grid-column: 1 / 15;
-    grid-row: 35 / 49;
+    grid-row: 36 / 51;
   }
   &-20 {
     color: $white;
     background-color: $red;
     grid-column: 15 / 25;
-    grid-row: 35 / 55;
+    grid-row: 36 / 55;
 
     text-decoration: none;
 
     @include on-event {
-      background-color: $grey;
+      background-color: $gray;
       color: $black;
 
       h3 {
@@ -224,37 +219,37 @@ $yellow: #ffff00;
   }
   &-21 {
     grid-column: 25 / 37;
-    grid-row: 35 / 45;
+    grid-row: 36 / 46;
   }
   &-22 {
     grid-column: 25 / 37;
-    grid-row: 45 / 55;
+    grid-row: 46 / 55;
   }
   &-23 {
     grid-column: 37 / 49;
-    grid-row: 45 / 55;
+    grid-row: 46 / 55;
   }
   &-24 {
     border-right: none;
     border-bottom: none;
     grid-column: 49 / 61;
-    grid-row: 45 / 61;
+    grid-row: 46 / 61;
   }
   &-25 {
     border-left: none;
     border-bottom: none;
     grid-column: 1 / 15;
-    grid-row: 49 / 61;
+    grid-row: 51 / 61;
   }
   &-26 {
     border-bottom: none;
-
+    color: $white;
+    background-color: $black;
     grid-column: 15 / 37;
     grid-row: 55 / 61;
   }
   &-27 {
     border-bottom: none;
-    background-color: $grey;
     grid-column: 37 / 49;
     grid-row: 55 / 61;
   }
