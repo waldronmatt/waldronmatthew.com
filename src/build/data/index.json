@@ -1,10 +1,9 @@
 {
   "title": "Homepage",
-  "welcome": "Welcome!",
   "first": "Matt",
   "last": "Waldron",
-  "title1": "Front End",
-  "title2": "Developer",
+  "title1": "front-end",
+  "title2": "developer",
   "resume": "Resume",
   "linkedin": "Linkedin",
   "github": "GitHub",
