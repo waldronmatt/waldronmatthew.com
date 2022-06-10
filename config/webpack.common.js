@@ -1,3 +1,4 @@
+const path = require('path');
 const { merge } = require('webpack-merge');
 const { baseParts } = require('@waldronmatt/webpack-config');
 const paths = require('./paths');
@@ -10,7 +11,7 @@ const commonConfig = isProduction => {
   return merge([
     {
       entry: {
-        main: [`${paths.src}/ts/index.ts`],
+        main: [`${paths.src}/js/index.js`],
       },
       output: {
         path: paths.build,
@@ -23,14 +24,18 @@ const commonConfig = isProduction => {
         },
       },
     },
-    baseParts.loadTS({}),
-    baseParts.enableTypeChecking({}),
+    baseParts.loadJS({
+      include: [path.resolve(__dirname, `${paths.src}/js/`)],
+    }),
     baseParts.setScriptOutputPath({}),
-    baseParts.loadSCSS({}),
+    baseParts.loadSCSS({
+      include: [path.resolve(__dirname, `${paths.src}/scss/`)],
+    }),
     baseParts.setStyleOutputPath({}),
-    baseParts.loadFonts({ path: 'fonts/' }),
-    baseParts.loadImagesAsFiles({ path: 'images/' }),
-    parts.loadPages({}),
+    baseParts.loadFonts({
+      path: 'fonts/',
+    }),
+    parts.loadPages(),
   ]);
 };
 

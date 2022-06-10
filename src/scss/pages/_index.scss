@@ -1,0 +1,389 @@
+/* stylelint-disable max-nesting-depth */
+@import '../abstracts/variables';
+
+.container-desktop {
+  display: none;
+}
+
+/* https://github.com/anandthakker/doiuse/issues/100 */
+
+.container-mobile {
+  display: grid;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+  height: 100vh;
+  margin: 0 auto;
+  width: 100vw;
+}
+
+[class^='m-square'] {
+  border: 9px solid $black;
+  display: inline-grid;
+  letter-spacing: 0.125rem;
+  padding: 0.5em;
+  place-content: center;
+  text-align: center;
+
+  @include md {
+    border: 6px solid $black;
+  }
+}
+
+.m-square {
+  &-a {
+    background-color: $white;
+    border-left: 6px solid transparent;
+    border-top: 6px solid transparent;
+    grid-column: 1 / 11;
+    grid-row: 1 / 9;
+  }
+
+  &-b {
+    background-color: $red;
+    border-right: 6px solid transparent;
+    border-top: 6px solid transparent;
+    color: $black;
+    grid-column: 11 / 31;
+    grid-row: 1 / 23;
+    text-decoration: none;
+
+    h2 {
+      border-bottom: 3px solid $black;
+      margin: 0 auto;
+      padding-bottom: 0.25em;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $gray;
+      border-right: 6px solid transparent;
+      border-top: 6px solid transparent;
+      color: $black;
+      cursor: pointer;
+      outline: 12px solid #ff0;
+      outline-offset: -18px;
+      z-index: 1;
+
+      h2 {
+        border-bottom: 3px solid $black;
+      }
+    }
+  }
+
+  &-c {
+    background-color: $black;
+    border-bottom: 1px solid $black;
+    border-left: 6px solid transparent;
+    border-top: 1px solid $black;
+    grid-column: 1 / 11;
+    grid-row: 9 / 10;
+  }
+
+  &-d {
+    background-color: $white;
+    border-left: 6px solid transparent;
+    grid-column: 1 / 11;
+    grid-row: 10 / 23;
+
+    h3 {
+      text-orientation: upright;
+      writing-mode: vertical-rl;
+    }
+  }
+
+  &-e {
+    background-color: $blue;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid transparent;
+    color: $white;
+    grid-column: 1 / 11;
+    grid-row: 23 / 31;
+  }
+
+  &-f {
+    background-color: $white;
+    border-bottom: 6px solid transparent;
+    grid-column: 11 / 28;
+    grid-row: 23 / 31;
+  }
+
+  &-g {
+    background-color: $white;
+    border-bottom: 15px solid $black;
+    border-right: 6px solid transparent;
+    grid-column: 28 / 31;
+    grid-row: 23 / 27;
+  }
+
+  &-h {
+    background-color: $yellow;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid $black;
+    grid-column: 28 / 31;
+    grid-row: 27 / 31;
+  }
+}
+
+@include md {
+  .container-mobile {
+    display: none;
+  }
+
+  .container-desktop {
+    display: grid;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+    grid-template-columns: repeat(60, 1fr);
+    grid-template-rows: repeat(60, 1fr);
+    height: 100vh;
+    margin: 0 auto;
+    width: 100vw;
+  }
+
+  [class^='d-square'] {
+    background-color: $black;
+    border: 3px solid $white;
+    color: $white;
+    display: inline-grid;
+    letter-spacing: 0.125rem;
+    padding: 0.5em;
+    place-content: center;
+    text-align: center;
+  }
+
+  .d-square {
+    &-1 {
+      border-left: 3px solid transparent;
+      border-top: 3px solid transparent;
+      grid-column: 1 / 7;
+      grid-row: 1 / 15;
+
+      h1 {
+        writing-mode: vertical-lr;
+      }
+    }
+
+    &-2 {
+      border-top: 3px solid transparent;
+      grid-column: 7 / 25;
+      grid-row: 1 / 5;
+    }
+
+    &-3 {
+      border-top: 3px solid transparent;
+      grid-column: 25 / 37;
+      grid-row: 1 / 10;
+    }
+
+    &-4 {
+      border-top: 3px solid transparent;
+      grid-column: 37 / 49;
+      grid-row: 1 / 10;
+    }
+
+    &-5 {
+      border-right: 3px solid transparent;
+      border-top: 3px solid transparent;
+      grid-column: 49 / 61;
+      grid-row: 1 / 15;
+    }
+
+    &-6 {
+      grid-column: 7 / 15;
+      grid-row: 5 / 15;
+    }
+
+    &-7 {
+      grid-column: 15 / 25;
+      grid-row: 5 / 15;
+    }
+
+    &-8 {
+      grid-column: 25 / 37;
+      grid-row: 10 / 15;
+    }
+
+    &-9 {
+      grid-column: 37 / 49;
+      grid-row: 10 / 15;
+    }
+
+    &-10 {
+      border-left: 3px solid transparent;
+      grid-column: 1 / 7;
+      grid-row: 15 / 36;
+    }
+
+    &-11 {
+      grid-column: 7 / 25;
+      grid-row: 15 / 26;
+      text-decoration: none;
+
+      @include on-event {
+        background-color: $blue;
+        color: $white;
+      }
+
+      h3 {
+        border-bottom: 3px solid $white;
+        padding-bottom: 0.25em;
+      }
+    }
+
+    &-12 {
+      grid-column: 25 / 37;
+      grid-row: 15 / 26;
+    }
+
+    &-13 {
+      grid-column: 37 / 49;
+      grid-row: 15 / 26;
+      text-decoration: none;
+
+      @include on-event {
+        background-color: $gray;
+        color: $black;
+
+        h3 {
+          border-bottom: 3px solid $black;
+        }
+      }
+
+      h3 {
+        border-bottom: 3px solid $white;
+        padding-bottom: 0.25em;
+      }
+    }
+
+    &-14 {
+      grid-column: 49 / 55;
+      grid-row: 15 / 46;
+    }
+
+    &-15 {
+      border-right: 3px solid transparent;
+      grid-column: 55 / 61;
+      grid-row: 15 / 46;
+
+      h3 {
+        text-orientation: upright;
+        writing-mode: vertical-rl;
+      }
+    }
+
+    &-16 {
+      grid-column: 7 / 25;
+      grid-row: 26 / 36;
+    }
+
+    &-17 {
+      grid-column: 25 / 37;
+      grid-row: 26 / 36;
+      text-decoration: none;
+
+      @include on-event {
+        background-color: $white;
+        color: $black;
+
+        h3 {
+          border-bottom: 3px solid $black;
+        }
+      }
+
+      h3 {
+        border-bottom: 3px solid $white;
+        margin: 0 auto;
+        padding-bottom: 0.25em;
+      }
+    }
+
+    &-18 {
+      grid-column: 37 / 49;
+      grid-row: 26 / 46;
+      text-decoration: none;
+
+      @include on-event {
+        background-color: $yellow;
+        color: $black;
+
+        h3 {
+          border-bottom: 3px solid $black;
+        }
+      }
+
+      h3 {
+        border-bottom: 3px solid $white;
+        padding-bottom: 0.5em;
+      }
+    }
+
+    &-19 {
+      border-left: 3px solid transparent;
+      grid-column: 1 / 15;
+      grid-row: 36 / 51;
+    }
+
+    &-20 {
+      grid-column: 15 / 25;
+      grid-row: 36 / 55;
+      text-decoration: none;
+
+      @include on-event {
+        background-color: $red;
+        color: $black;
+
+        h3 {
+          border-bottom: 3px solid $black;
+        }
+      }
+
+      h3 {
+        border-bottom: 3px solid $white;
+        padding-bottom: 0.5em;
+      }
+    }
+
+    &-21 {
+      grid-column: 25 / 37;
+      grid-row: 36 / 46;
+    }
+
+    &-22 {
+      grid-column: 25 / 37;
+      grid-row: 46 / 55;
+    }
+
+    &-23 {
+      grid-column: 37 / 49;
+      grid-row: 46 / 55;
+    }
+
+    &-24 {
+      border-bottom: 3px solid transparent;
+      border-right: 3px solid transparent;
+      grid-column: 49 / 61;
+      grid-row: 46 / 61;
+    }
+
+    &-25 {
+      border-bottom: 3px solid transparent;
+      border-left: 3px solid transparent;
+      grid-column: 1 / 15;
+      grid-row: 51 / 61;
+    }
+
+    &-26 {
+      border-bottom: 3px solid transparent;
+      grid-column: 15 / 37;
+      grid-row: 55 / 61;
+    }
+
+    &-27 {
+      border-bottom: 3px solid transparent;
+      grid-column: 37 / 49;
+      grid-row: 55 / 61;
+    }
+  }
+}

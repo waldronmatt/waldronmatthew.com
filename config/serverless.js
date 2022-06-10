@@ -25,10 +25,7 @@ app.get('/', (_request, response) => {
   response.sendFile(paths.INDEX_PAGE);
 });
 
-// 404 route (keep this as the last route)
-app.get('*', (_request, response) => {
-  response.sendFile(paths.ERROR_PAGE);
-});
+// Netlify takes care of 404 routing
 
 // path must route to lambda
 app.use('/.netlify/functions/server', app);
