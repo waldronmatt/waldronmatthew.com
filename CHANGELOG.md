@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.0.0...v1.0.1) (2022-06-12)
+
+
+### Bug Fixes
+
+* **global:** update dotfiles ([e069dff](https://github.com/waldronmatt/waldronmatthew.com/commit/e069dffe4576a31d8b8467087b38a1d623c85972))
+
 # 1.0.0 (2022-06-10)
 
 
