@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.0.1...v1.1.0) (2022-06-19)
+
+
+### Features
+
+* **_index.scss:** update mobile ux to dark mode ([2f230e3](https://github.com/waldronmatt/waldronmatthew.com/commit/2f230e37eb2c7b2c945c9a58ff06e1cf4f05be6b))
+
 ## [1.0.1](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.0.0...v1.0.1) (2022-06-12)
 
 
