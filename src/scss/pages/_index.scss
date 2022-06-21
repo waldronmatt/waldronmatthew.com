@@ -19,30 +19,26 @@
 
 [class^='m-square'] {
   background-color: $black;
-  border: 9px solid $white;
+  border: 3px solid $white;
   color: $white;
   display: inline-grid;
   letter-spacing: 0.125rem;
   padding: 0.5em;
   place-content: center;
   text-align: center;
-
-  @include md {
-    border: 6px solid $black;
-  }
 }
 
 .m-square {
   &-a {
-    border-left: 6px solid transparent;
-    border-top: 6px solid transparent;
+    border-left: 3px solid transparent;
+    border-top: 3px solid transparent;
     grid-column: 1 / 11;
-    grid-row: 1 / 9;
+    grid-row: 1 / 10;
   }
 
   &-b {
-    border-right: 6px solid transparent;
-    border-top: 6px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid transparent;
     grid-column: 11 / 31;
     grid-row: 1 / 23;
     text-decoration: none;
@@ -64,14 +60,7 @@
   }
 
   &-c {
-    background-color: $white;
-    border-left: 6px solid transparent;
-    grid-column: 1 / 11;
-    grid-row: 9 / 10;
-  }
-
-  &-d {
-    border-left: 6px solid transparent;
+    border-left: 3px solid transparent;
     grid-column: 1 / 11;
     grid-row: 10 / 23;
 
@@ -81,31 +70,29 @@
     }
   }
 
-  &-e {
-    border-bottom: 6px solid transparent;
-    border-left: 6px solid transparent;
+  &-d {
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
     color: $white;
     grid-column: 1 / 11;
     grid-row: 23 / 31;
   }
 
-  &-f {
-    border-bottom: 6px solid transparent;
+  &-e {
+    border-bottom: 3px solid transparent;
     grid-column: 11 / 28;
     grid-row: 23 / 31;
   }
 
-  &-g {
-    border-bottom: 15px solid $white;
-    border-right: 6px solid transparent;
+  &-f {
+    border-right: 3px solid transparent;
     grid-column: 28 / 31;
     grid-row: 23 / 27;
   }
 
-  &-h {
-    border-bottom: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 12px solid $white;
+  &-g {
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
     grid-column: 28 / 31;
     grid-row: 27 / 31;
   }
