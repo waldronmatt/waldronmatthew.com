@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.1.0...v1.1.1) (2022-06-21)
+
+
+### Bug Fixes
+
+* **_index.scss:** fix mobile borders ([7d24688](https://github.com/waldronmatt/waldronmatthew.com/commit/7d24688e8cf58c7945db8be93905c401afc1fa5c))
+
 # [1.1.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.0.1...v1.1.0) (2022-06-19)
 
 
