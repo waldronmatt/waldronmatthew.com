@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.1.1...v1.1.2) (2022-07-24)
+
+
+### Bug Fixes
+
+* **global:** update title and website links ([b9d97c1](https://github.com/waldronmatt/waldronmatthew.com/commit/b9d97c17d64f67f14a0bd41b508ce9dce3381021))
+
 ## [1.1.1](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.1.0...v1.1.1) (2022-06-21)
 
 
