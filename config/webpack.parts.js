@@ -6,7 +6,7 @@ const parts = () => {
     plugins: [
       new HtmlWebPackPlugin({
         filename: 'index.html',
-        title: 'Matt Waldron',
+        title: 'Matthew Waldron',
         template: `${paths.src}/index.html`,
         favicon: `${paths.public}/favicon.png`,
         meta: {
