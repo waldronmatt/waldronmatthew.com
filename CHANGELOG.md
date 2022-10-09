@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.1.2...v1.2.0) (2022-10-09)
+
+
+### Bug Fixes
+
+* **index:** add contact email, update copyright, update art links and colors ([afad9e1](https://github.com/waldronmatt/waldronmatthew.com/commit/afad9e1df1df2b4684031639bf51d1d0e84b0924))
+
+
+### Features
+
+* **global:** add linters, upgrade packages and linting updates ([78bf9e7](https://github.com/waldronmatt/waldronmatthew.com/commit/78bf9e77ba9e741c44e3b0eb61cbabdddbd67f40))
+
 ## [1.1.2](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.1.1...v1.1.2) (2022-07-24)
 
 
