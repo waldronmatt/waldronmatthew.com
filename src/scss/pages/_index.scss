@@ -73,9 +73,23 @@
   &-d {
     border-bottom: 3px solid transparent;
     border-left: 3px solid transparent;
-    color: $white;
     grid-column: 1 / 11;
     grid-row: 23 / 31;
+
+    @include on-event {
+      background-color: $red;
+      color: $black;
+
+      small {
+        border-bottom: 3px solid $black;
+      }
+    }
+
+    small {
+      border-bottom: 3px solid $white;
+      margin: 0 auto;
+      padding-bottom: 0.25em;
+    }
   }
 
   &-e {
@@ -276,11 +290,11 @@
       text-decoration: none;
 
       @include on-event {
-        background-color: $yellow;
-        color: $black;
+        background-color: $blue;
+        color: $white;
 
         h3 {
-          border-bottom: 3px solid $black;
+          border-bottom: 3px solid $white;
         }
       }
 
@@ -329,6 +343,21 @@
     &-23 {
       grid-column: 37 / 49;
       grid-row: 46 / 55;
+
+      @include on-event {
+        background-color: $yellow;
+        color: $black;
+
+        small {
+          border-bottom: 3px solid $black;
+        }
+      }
+
+      small {
+        border-bottom: 3px solid $white;
+        margin: 0 auto;
+        padding-bottom: 0.25em;
+      }
     }
 
     &-24 {
@@ -343,6 +372,21 @@
       border-left: 3px solid transparent;
       grid-column: 1 / 15;
       grid-row: 51 / 61;
+
+      @include on-event {
+        background-color: $white;
+        color: $black;
+
+        h3 {
+          border-bottom: 3px solid $black;
+        }
+      }
+
+      h3 {
+        border-bottom: 3px solid $white;
+        margin: 0 auto;
+        padding-bottom: 0.25em;
+      }
     }
 
     &-26 {
