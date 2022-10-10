@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.3...v1.2.4) (2022-10-10)
+
+
+### Bug Fixes
+
+* **index.html:** change link from contact to resume ([84aeb6b](https://github.com/waldronmatt/waldronmatthew.com/commit/84aeb6b16ae9c2dd2a4a15da87f9f75e56764a38))
+
 ## [1.2.3](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.2...v1.2.3) (2022-10-10)
 
 
