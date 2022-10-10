@@ -188,6 +188,21 @@
     &-8 {
       grid-column: 25 / 37;
       grid-row: 10 / 15;
+
+      @include on-event {
+        background-color: $yellow;
+        color: $black;
+
+        small {
+          border-bottom: 3px solid $black;
+        }
+      }
+
+      small {
+        border-bottom: 3px solid $white;
+        margin: 0 auto;
+        padding-bottom: 0.25em;
+      }
     }
 
     &-9 {
@@ -343,21 +358,6 @@
     &-23 {
       grid-column: 37 / 49;
       grid-row: 46 / 55;
-
-      @include on-event {
-        background-color: $yellow;
-        color: $black;
-
-        small {
-          border-bottom: 3px solid $black;
-        }
-      }
-
-      small {
-        border-bottom: 3px solid $white;
-        margin: 0 auto;
-        padding-bottom: 0.25em;
-      }
     }
 
     &-24 {
