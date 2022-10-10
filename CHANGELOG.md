@@ -1,3 +1,11 @@
+## [1.2.3](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.2...v1.2.3) (2022-10-10)
+
+
+### Bug Fixes
+
+* **index.html:** fix a11y landmark issue by converting div to main element ([eb2b2c6](https://github.com/waldronmatt/waldronmatthew.com/commit/eb2b2c6628ddd94b04c2bfd883099c42bb48162c))
+* **webpack.parts.js:** update website description ([3db13a4](https://github.com/waldronmatt/waldronmatthew.com/commit/3db13a43f3a26073bd8531656989a638a35842cd))
+
 ## [1.2.2](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.1...v1.2.2) (2022-10-10)
 
 
