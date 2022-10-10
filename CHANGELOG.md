@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.1...v1.2.2) (2022-10-10)
+
+
+### Bug Fixes
+
+* **_index.scss:** remove margin from text and link underline ([0a3ddf5](https://github.com/waldronmatt/waldronmatthew.com/commit/0a3ddf541adfdbbad11351d09af9677919685803))
+
 ## [1.2.1](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.0...v1.2.1) (2022-10-10)
 
 
