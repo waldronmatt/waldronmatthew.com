@@ -10,7 +10,7 @@ const parts = () => {
         template: `${paths.src}/index.html`,
         favicon: `${paths.public}/favicon.png`,
         meta: {
-          description: 'Front-End Developer',
+          description: 'Matthew Waldron Website',
           keywords: 'front-end, development, web, programming',
           viewport: 'width=device-width',
         },
