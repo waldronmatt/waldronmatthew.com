@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.0...v1.2.1) (2022-10-10)
+
+
+### Bug Fixes
+
+* **index:** move p.m. link ([59f7285](https://github.com/waldronmatt/waldronmatthew.com/commit/59f7285d7d89a9956a20857e8340bd2b7168e1c7))
+
 # [1.2.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.1.2...v1.2.0) (2022-10-09)
 
 
