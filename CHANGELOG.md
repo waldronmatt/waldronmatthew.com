@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.4...v1.2.5) (2022-11-26)
+
+
+### Bug Fixes
+
+* **global:** remove/update configs ([70f4200](https://github.com/waldronmatt/waldronmatthew.com/commit/70f4200b0cd0d614dfd85371979cde881f06d1f5))
+
 ## [1.2.4](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.3...v1.2.4) (2022-10-10)
 
 
