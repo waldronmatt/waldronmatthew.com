@@ -1,3 +1,11 @@
+## [1.2.6](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.5...v1.2.6) (2022-12-20)
+
+
+### Bug Fixes
+
+* **_index.scss:** c block text in vertical mode only in landscape ([558babb](https://github.com/waldronmatt/waldronmatthew.com/commit/558babb33b49cf734486b9fb84460d0ca0ff5ca0))
+* **index.html:** add resume pdf link, swap sections ([944559b](https://github.com/waldronmatt/waldronmatthew.com/commit/944559b6792e364656777be392ba2fbc6a1c8ff6))
+
 ## [1.2.5](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.4...v1.2.5) (2022-11-26)
 
 
