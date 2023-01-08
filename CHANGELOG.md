@@ -1,3 +1,10 @@
+## [1.2.7](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.6...v1.2.7) (2023-01-08)
+
+
+### Bug Fixes
+
+* **index.html:** update resume links to subdomain ([9df0e95](https://github.com/waldronmatt/waldronmatthew.com/commit/9df0e9556cbbf5c0491959d35ae156ad49633cae))
+
 ## [1.2.6](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.5...v1.2.6) (2022-12-20)
 
 
