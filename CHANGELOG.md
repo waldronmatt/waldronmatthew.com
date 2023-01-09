@@ -1,3 +1,10 @@
+## [1.2.8](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.7...v1.2.8) (2023-01-09)
+
+
+### Bug Fixes
+
+* **favicon:** update to be 32x32 size ([d4e6e85](https://github.com/waldronmatt/waldronmatthew.com/commit/d4e6e85c8cf29da07d92ae22533ec289bae9c527))
+
 ## [1.2.7](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.6...v1.2.7) (2023-01-08)
 
 
