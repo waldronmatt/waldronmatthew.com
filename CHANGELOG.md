@@ -1,3 +1,10 @@
+## [1.2.9](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.8...v1.2.9) (2023-01-14)
+
+
+### Bug Fixes
+
+* **global:** reduce header size on desktop, convert h3 to p tags ([c78c934](https://github.com/waldronmatt/waldronmatthew.com/commit/c78c93402fe2219c6052a931fc6d670890fb15c2))
+
 ## [1.2.8](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.7...v1.2.8) (2023-01-09)
 
 
