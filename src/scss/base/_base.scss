@@ -8,21 +8,35 @@ html {
     word-break: break-word;
   }
 
-  h1 {
-    font-size: 1.5rem;
-    margin: 0;
+  .container-mobile {
+    h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    small {
+      font-size: 0.8rem;
+      line-height: 1.75;
+    }
   }
 
-  h2 {
-    font-size: 1.33rem;
-  }
+  .container-desktop {
+    h1 {
+      margin: 0;
+    }
 
-  p {
-    font-size: 1.25rem;
-  }
+    h1,
+    p {
+      font-size: 1rem;
+    }
 
-  small {
-    font-size: 0.8rem;
-    line-height: 1.75;
+    small {
+      font-size: 0.8rem;
+      line-height: 1.75;
+    }
   }
 }
