@@ -1,3 +1,19 @@
+/* stylelint-disable selector-no-qualifying-type */
+:root {
+  --color-bg: #000;
+  --color-fg: #fff;
+}
+
+html[data-theme='light'] {
+  --color-bg: #fff;
+  --color-fg: #000;
+}
+
+html[data-theme='dark'] {
+  --color-bg: #000;
+  --color-fg: #fff;
+}
+
 html {
   // set up a decent box model on the root element
   box-sizing: border-box;

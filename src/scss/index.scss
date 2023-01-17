@@ -12,7 +12,7 @@
 @import 'abstracts/mixins', 'abstracts/breakpoints';
 
 /* Base styles */
-@import 'base/base', 'base/fonts';
+@import 'base/base', 'base/fonts', 'base/toggle';
 
 /* Pages */
 @import 'pages/index';

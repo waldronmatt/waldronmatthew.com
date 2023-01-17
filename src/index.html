@@ -31,7 +31,14 @@
         <small>© <span class="footer-copyright"></span> M.W.</small>
       </div>
       <div class="m-square-f"></div>
-      <div class="m-square-g"></div>
+      <button
+        class="m-square-g button-theme-toggle"
+        title="Toggles light & dark"
+        aria-label="auto"
+        aria-live="polite"
+      >
+        <%= require('html-loader!./toggle-mobile.html').default %>
+      </button>
     </main>
 
     <main class="container-desktop">
@@ -114,7 +121,14 @@
         ><p>Contact</p></a
       >
       <div class="d-square-26"></div>
-      <div class="d-square-27"></div>
+      <button
+        class="d-square-27 button-theme-toggle"
+        title="Toggles light & dark"
+        aria-label="auto"
+        aria-live="polite"
+      >
+        <%= require('html-loader!./toggle-desktop.html').default %>
+      </button>
     </main>
   </body>
 </html>

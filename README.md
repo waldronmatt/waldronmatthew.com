@@ -2,9 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d78b85f5-0cf2-4525-acb8-bef8f6f560be/deploy-status)](https://app.netlify.com/sites/waldronmatthew/deploys)
 
-The code for my personal [portfolio website](https://www.waldronmatthew.com).
-
-Code template was generated from [webpack-template](https://github.com/waldronmatt/webpack-template).
+My personal [portfolio website](https://www.waldronmatthew.com) built using [webpack-template](https://github.com/waldronmatt/webpack-template) and a custom version of the [theme-switcher](https://web.dev/building-a-theme-switch-component).
 
 ## Installation
 

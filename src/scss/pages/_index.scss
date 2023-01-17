@@ -17,9 +17,9 @@
 }
 
 [class^='m-square'] {
-  background-color: $black;
-  border: 3px solid $white;
-  color: $white;
+  background-color: var(--color-bg);
+  border: 3px solid var(--color-fg);
+  color: var(--color-fg);
   display: inline-grid;
   letter-spacing: 0.125rem;
   padding: 0.5em;
@@ -52,7 +52,7 @@
     }
 
     p {
-      border-bottom: 3px solid $white;
+      border-bottom: 3px solid var(--color-fg);
       font-size: 1.33rem !important;
       margin: 0 auto;
     }
@@ -87,28 +87,37 @@
     }
 
     small {
-      border-bottom: 3px solid $white;
+      border-bottom: 3px solid var(--color-fg);
       margin: 0 auto;
     }
   }
 
   &-e {
     border-bottom: 3px solid transparent;
-    grid-column: 11 / 28;
+    grid-column: 11 / 27;
     grid-row: 23 / 31;
   }
 
   &-f {
     border-right: 3px solid transparent;
-    grid-column: 28 / 31;
+    grid-column: 27 / 31;
     grid-row: 23 / 27;
   }
 
   &-g {
     border-bottom: 3px solid transparent;
     border-right: 3px solid transparent;
-    grid-column: 28 / 31;
+    grid-column: 27 / 31;
     grid-row: 27 / 31;
+
+    @include on-event {
+      background-color: $yellow;
+
+      > span {
+        --icon-fill: #000;
+        --icon-fill-hover: #000;
+      }
+    }
   }
 }
 
@@ -128,9 +137,9 @@
   }
 
   [class^='d-square'] {
-    background-color: $black;
-    border: 3px solid $white;
-    color: $white;
+    background-color: var(--color-bg);
+    border: 3px solid var(--color-fg);
+    color: var(--color-fg);
     display: inline-grid;
     letter-spacing: 0.125rem;
     padding: 0.5em;
@@ -199,8 +208,7 @@
       }
 
       small {
-        border-bottom: 3px solid $white;
-        margin: 0 auto;
+        border-bottom: 3px solid var(--color-fg);
       }
     }
 
@@ -223,10 +231,14 @@
       @include on-event {
         background-color: $blue;
         color: $white;
+
+        p {
+          border-bottom: 3px solid $white;
+        }
       }
 
       p {
-        border-bottom: 3px solid $white;
+        border-bottom: 3px solid var(--color-fg);
       }
     }
 
@@ -250,7 +262,7 @@
       }
 
       p {
-        border-bottom: 3px solid $white;
+        border-bottom: 3px solid var(--color-fg);
       }
     }
 
@@ -281,16 +293,16 @@
       text-decoration: none;
 
       @include on-event {
-        background-color: $white;
-        color: $black;
+        background-color: var(--color-fg);
+        color: var(--color-bg);
 
         p {
-          border-bottom: 3px solid $black;
+          border-bottom: 3px solid var(--color-bg);
         }
       }
 
       p {
-        border-bottom: 3px solid $white;
+        border-bottom: 3px solid var(--color-fg);
         margin: 0 auto;
       }
     }
@@ -310,7 +322,7 @@
       }
 
       p {
-        border-bottom: 3px solid $white;
+        border-bottom: 3px solid var(--color-fg);
       }
     }
 
@@ -335,7 +347,7 @@
       }
 
       p {
-        border-bottom: 3px solid $white;
+        border-bottom: 3px solid var(--color-fg);
       }
     }
 
@@ -368,16 +380,16 @@
       grid-row: 51 / 61;
 
       @include on-event {
-        background-color: $white;
-        color: $black;
+        background-color: var(--color-fg);
+        color: var(--color-bg);
 
         p {
-          border-bottom: 3px solid $black;
+          border-bottom: 3px solid var(--color-bg);
         }
       }
 
       p {
-        border-bottom: 3px solid $white;
+        border-bottom: 3px solid var(--color-fg);
         margin: 0 auto;
       }
     }
@@ -392,6 +404,15 @@
       border-bottom: 3px solid transparent;
       grid-column: 37 / 49;
       grid-row: 55 / 61;
+
+      @include on-event {
+        background-color: $gray;
+
+        > span {
+          --icon-fill: #000;
+          --icon-fill-hover: #000;
+        }
+      }
     }
   }
 }
