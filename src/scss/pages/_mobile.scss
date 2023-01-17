@@ -1,0 +1,120 @@
+.container-desktop {
+  display: none;
+}
+
+/* https://github.com/anandthakker/doiuse/issues/100 */
+
+.container-mobile {
+  display: grid;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+  height: 100vh;
+  margin: 0 auto;
+  width: 100vw;
+}
+
+[class^='m-square'] {
+  background-color: var(--color-bg);
+  border: var(--border-size) solid var(--color-fg);
+  color: var(--color-fg);
+  display: inline-grid;
+  letter-spacing: 0.125rem;
+  padding: 0.5em;
+  place-content: center;
+  text-align: center;
+}
+
+.m-square {
+  &-a {
+    border-left: var(--border-size) solid transparent;
+    border-top: var(--border-size) solid transparent;
+    grid-column: 1 / 11;
+    grid-row: 1 / 10;
+  }
+
+  &-b {
+    border-right: var(--border-size) solid transparent;
+    border-top: var(--border-size) solid transparent;
+    grid-column: 11 / 31;
+    grid-row: 1 / 23;
+    text-decoration: none;
+
+    @include on-event {
+      background-color: var(--color-blue);
+      color: var(--color-white);
+
+      p {
+        border-bottom: var(--border-size) solid var(--color-white);
+      }
+    }
+
+    p {
+      border-bottom: var(--border-size) solid var(--color-fg);
+      font-size: 1.33rem !important;
+      margin: 0 auto;
+    }
+  }
+
+  &-c {
+    border-left: var(--border-size) solid transparent;
+    grid-column: 1 / 11;
+    grid-row: 10 / 23;
+
+    @media (orientation: portrait) {
+      p {
+        text-orientation: upright;
+        writing-mode: vertical-rl;
+      }
+    }
+  }
+
+  &-d {
+    border-bottom: var(--border-size) solid transparent;
+    border-left: var(--border-size) solid transparent;
+    grid-column: 1 / 11;
+    grid-row: 23 / 31;
+
+    @include on-event {
+      background-color: var(--color-red);
+      color: var(--color-black);
+
+      small {
+        border-bottom: var(--border-size) solid var(--color-black);
+      }
+    }
+
+    small {
+      border-bottom: var(--border-size) solid var(--color-fg);
+      margin: 0 auto;
+    }
+  }
+
+  &-e {
+    border-bottom: var(--border-size) solid transparent;
+    grid-column: 11 / 27;
+    grid-row: 23 / 31;
+  }
+
+  &-f {
+    border-right: var(--border-size) solid transparent;
+    grid-column: 27 / 31;
+    grid-row: 23 / 27;
+  }
+
+  &-g {
+    border-bottom: var(--border-size) solid transparent;
+    border-right: var(--border-size) solid transparent;
+    grid-column: 27 / 31;
+    grid-row: 27 / 31;
+
+    @include on-event {
+      background-color: var(--color-yellow);
+
+      > span {
+        --icon-fill: var(--color-black);
+        --icon-fill-hover: var(--color-black);
+      }
+    }
+  }
+}

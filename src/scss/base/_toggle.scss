@@ -1,5 +1,3 @@
-@import '../abstracts/variables';
-
 .sun-and-moon {
   > :is(.moon, .sun, .sun-beams) {
     transform-origin: center center;
@@ -8,7 +6,7 @@
   > :is(.moon, .sun) {
     fill: var(--icon-fill);
 
-    .theme-toggle:is(:hover, :focus-visible) > & {
+    .toggle-parent:is(:hover, :focus-visible) > & {
       fill: var(--icon-fill-hover);
     }
   }
@@ -17,7 +15,7 @@
     stroke: var(--icon-fill);
     stroke-width: 2px;
 
-    .theme-toggle:is(:hover, :focus-visible) & {
+    .toggle-parent:is(:hover, :focus-visible) & {
       stroke: var(--icon-fill-hover);
     }
   }
@@ -43,10 +41,10 @@
   }
 }
 
-.theme-toggle {
+.toggle-parent {
   --size: 1.25rem;
-  --icon-fill: #000;
-  --icon-fill-hover: #000;
+  --icon-fill: var(--color-black);
+  --icon-fill-hover: var(--color-black);
 
   aspect-ratio: 1;
   background: none;
@@ -65,13 +63,13 @@
   }
 
   [data-theme='dark'] & {
-    --icon-fill: #fff;
-    --icon-fill-hover: #fff;
+    --icon-fill: var(--color-white);
+    --icon-fill-hover: var(--color-white);
   }
 }
 
 @include md {
-  .theme-toggle {
+  .toggle-parent {
     --size: 1.75rem;
   }
 }

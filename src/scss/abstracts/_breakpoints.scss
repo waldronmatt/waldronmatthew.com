@@ -1,29 +1,29 @@
 @mixin xs {
-  @media (min-width: #{$screen-xs-min}) {
+  @media (min-width: 320px) {
     @content;
   }
 }
 
 @mixin sm {
-  @media (min-width: #{$screen-sm-min}) {
+  @media (min-width: 480px) {
     @content;
   }
 }
 
 @mixin md {
-  @media (min-width: #{$screen-md-min}) {
+  @media (min-width: 768px) {
     @content;
   }
 }
 
 @mixin lg {
-  @media (min-width: #{$screen-lg-min}) {
+  @media (min-width: 1024px) {
     @content;
   }
 }
 
 @mixin xl {
-  @media (min-width: #{$screen-xl-min}) {
+  @media (min-width: 1440px) {
     @content;
   }
 }

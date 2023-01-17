@@ -14,7 +14,7 @@ const theme = {
 const reflectPreference = () => {
   document.firstElementChild.dataset.theme = theme.value;
   // eslint-disable-next-line unicorn/no-array-for-each
-  document.querySelectorAll('.button-theme-toggle').forEach(toggle => {
+  document.querySelectorAll('.theme-toggle').forEach(toggle => {
     toggle?.setAttribute('aria-label', theme.value);
   });
 };
@@ -32,7 +32,7 @@ window.addEventListener('load', () => {
   reflectPreference();
   // now this script can find and listen for clicks on the control
   // eslint-disable-next-line unicorn/no-array-for-each
-  document.querySelectorAll('.button-theme-toggle').forEach(toggle => {
+  document.querySelectorAll('.theme-toggle').forEach(toggle => {
     toggle?.addEventListener('click', () => {
       // flip current value
       theme.value = theme.value === 'light' ? 'dark' : 'light';
