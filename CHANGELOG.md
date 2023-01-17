@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.9...v1.3.0) (2023-01-17)
+
+
+### Bug Fixes
+
+* **global:** refactor sass ([44ae8ca](https://github.com/waldronmatt/waldronmatthew.com/commit/44ae8cac6f6181b429b7fff1f787c1838ea16b94))
+
+
+### Features
+
+* **global:** add theme switcher ([85c8037](https://github.com/waldronmatt/waldronmatthew.com/commit/85c80371c3dece96379a14f6c596395a79cded57))
+
 ## [1.2.9](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.8...v1.2.9) (2023-01-14)
 
 
