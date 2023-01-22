@@ -283,11 +283,11 @@
       grid-row: 55 / 61;
 
       @include on-event {
-        background-color: var(--color-gray);
+        background-color: var(--color-fg);
 
         > span {
-          --icon-fill: var(--color-black);
-          --icon-fill-hover: var(--color-black);
+          --icon-fill: var(--color-bg);
+          --icon-fill-hover: var(--color-bg);
         }
       }
     }

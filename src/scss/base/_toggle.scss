@@ -43,8 +43,8 @@
 
 .toggle-parent {
   --size: 1.25rem;
-  --icon-fill: var(--color-black);
-  --icon-fill-hover: var(--color-black);
+  --icon-fill: var(--color-fg);
+  --icon-fill-hover: var(--color-fg);
 
   aspect-ratio: 1;
   background: none;
@@ -60,11 +60,6 @@
     block-size: 100%;
     inline-size: 100%;
     stroke-linecap: round;
-  }
-
-  [data-theme='dark'] & {
-    --icon-fill: var(--color-white);
-    --icon-fill-hover: var(--color-white);
   }
 }
 
