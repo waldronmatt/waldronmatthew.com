@@ -1,3 +1,12 @@
+## [1.3.1](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.3.0...v1.3.1) (2023-01-22)
+
+
+### Bug Fixes
+
+* **base.scss:** update to warmer colors for easier contrast ([f404602](https://github.com/waldronmatt/waldronmatthew.com/commit/f40460251dbbf24e74d9d456bf120455dbfe0647))
+* **desktop:** change contact to color yellow ([cba8d82](https://github.com/waldronmatt/waldronmatthew.com/commit/cba8d823e2125d2eff3a571feda8f7673d5a4f16))
+* **index.html:** remove title from toggle theme button ([b98aaa3](https://github.com/waldronmatt/waldronmatthew.com/commit/b98aaa3cfde7f10b7e8d8bebb8359339c737833a))
+
 # [1.3.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.2.9...v1.3.0) (2023-01-17)
 
 
