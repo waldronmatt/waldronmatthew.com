@@ -257,11 +257,11 @@
       grid-row: 51 / 61;
 
       @include on-event {
-        background-color: var(--color-fg);
-        color: var(--color-bg);
+        background-color: var(--color-yellow);
+        color: var(--color-black);
 
         p {
-          border-bottom: var(--border-size) solid var(--color-bg);
+          border-bottom: var(--border-size) solid var(--color-black);
         }
       }
 
