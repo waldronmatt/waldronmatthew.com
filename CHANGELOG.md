@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.3.1...v1.3.2) (2023-01-22)
+
+
+### Bug Fixes
+
+* **global:** change toggle hover bg to inverse color of theme ([6d46706](https://github.com/waldronmatt/waldronmatthew.com/commit/6d467069512da7e757313c0f523cb0a8e662d926))
+
 ## [1.3.1](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.3.0...v1.3.1) (2023-01-22)
 
 
