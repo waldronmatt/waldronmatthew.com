@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.3.2...v1.3.3) (2023-01-28)
+
+
+### Bug Fixes
+
+* **index.html:** change from twitter to credly link ([b55c9d9](https://github.com/waldronmatt/waldronmatthew.com/commit/b55c9d9fbe7c6fc4924e60e9c63c9188250e832b))
+
 ## [1.3.2](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.3.1...v1.3.2) (2023-01-22)
 
 
