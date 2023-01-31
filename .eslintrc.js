@@ -1,5 +1,5 @@
 module.exports = {
-  ignorePatterns: ['dist/**'],
+  ignorePatterns: ['dist/**', 'public/sw.js'],
   extends: '@waldronmatt/eslint-config',
   parserOptions: {
     // Required for certain syntax usages
