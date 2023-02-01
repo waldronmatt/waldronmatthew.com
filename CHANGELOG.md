@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.3.3...v1.4.0) (2023-02-01)
+
+
+### Bug Fixes
+
+* **index.html:** rearrange resume and github, add source code link ([34ac0c8](https://github.com/waldronmatt/waldronmatthew.com/commit/34ac0c87778c8ab183d7ecb33ef5cfee32b3412f))
+
+
+### Features
+
+* **global:** add pwa functionality ([9dc0d9c](https://github.com/waldronmatt/waldronmatthew.com/commit/9dc0d9c6cd79fa6ec4788ce5e49af51a8e386d88))
+
 ## [1.3.3](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.3.2...v1.3.3) (2023-01-28)
 
 
