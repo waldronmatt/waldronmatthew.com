@@ -2,10 +2,10 @@
   display: none;
 }
 
-/* https://github.com/anandthakker/doiuse/issues/100 */
-
 .container-mobile {
   display: grid;
+
+  /* https://github.com/anandthakker/doiuse/issues/100 */
   /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
   grid-template-columns: repeat(30, 1fr);
   grid-template-rows: repeat(30, 1fr);

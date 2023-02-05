@@ -1,0 +1,21 @@
+@keyframes color-change {
+  0% {
+    background-color: var(--color-bg);
+  }
+
+  25% {
+    background-color: var(--color-blue);
+  }
+
+  50% {
+    background-color: var(--color-red);
+  }
+
+  75% {
+    background-color: var(--color-yellow);
+  }
+
+  100% {
+    background-color: var(--color-bg);
+  }
+}

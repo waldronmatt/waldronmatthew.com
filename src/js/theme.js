@@ -1,19 +1,28 @@
+const syncLightbulbColors = () => {
+  const root = document.documentElement;
+  if (document.firstElementChild.dataset.animation === 'disabled') {
+    root.style.removeProperty('--lightbulb-color');
+    root.style.removeProperty('--lightbulb-color-hover');
+  }
+};
+
 const storageKey = 'theme-preference';
 
-const getColorPreference = () => {
-  if (localStorage.getItem(storageKey)) return localStorage.getItem(storageKey);
+const getPreference = () => {
+  if (localStorage.getItem(storageKey)) {
+    return localStorage.getItem(storageKey);
+  }
   return window.matchMedia('(prefers-color-scheme: dark)').matches
     ? 'dark'
     : 'light';
 };
 
 const theme = {
-  value: getColorPreference(),
+  value: getPreference(),
 };
 
 const reflectPreference = () => {
   document.firstElementChild.dataset.theme = theme.value;
-  // eslint-disable-next-line unicorn/no-array-for-each
   document.querySelectorAll('.theme-toggle').forEach(toggle => {
     toggle?.setAttribute('aria-label', theme.value);
   });
@@ -31,11 +40,12 @@ window.addEventListener('load', () => {
   // set on load so screen readers can see latest value on the button
   reflectPreference();
   // now this script can find and listen for clicks on the control
-  // eslint-disable-next-line unicorn/no-array-for-each
   document.querySelectorAll('.theme-toggle').forEach(toggle => {
     toggle?.addEventListener('click', () => {
       // flip current value
       theme.value = theme.value === 'light' ? 'dark' : 'light';
+      // update lightbulb color to match current theme
+      syncLightbulbColors();
       setPreference();
     });
   });
@@ -46,5 +56,7 @@ window
   .matchMedia('(prefers-color-scheme: dark)')
   .addEventListener('change', ({ matches: isDark }) => {
     theme.value = isDark ? 'dark' : 'light';
+    // update lightbulb color to match current theme
+    syncLightbulbColors();
     setPreference();
   });

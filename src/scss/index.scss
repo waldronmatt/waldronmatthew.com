@@ -9,10 +9,13 @@
 @import 'vendors/reset', 'vendors/sanitize';
 
 /* Configurations and helpers */
-@import 'abstracts/mixins', 'abstracts/breakpoints';
+@import 'abstracts/mixins', 'abstracts/keyframes', 'abstracts/breakpoints';
 
 /* Base styles */
-@import 'base/base', 'base/fonts', 'base/toggle';
+@import 'base/base', 'base/fonts';
+
+/* Components */
+@import 'components/theme-toggle';
 
 /* Pages */
 @import 'pages/mobile', 'pages/desktop';

@@ -13,6 +13,30 @@
     width: 100vw;
   }
 
+  // class omitted on page load by default
+  // unless user preferences have animations enabled
+  .init-animate {
+    animation: color-change 20000ms ease var(--delay) 3 both;
+
+    // https://stackoverflow.com/a/13293044
+    transform: rotateZ(360deg);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    [class^='d-square'] {
+      animation: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .init-animate {
+      animation: color-change 20000ms ease var(--delay) 3 both;
+
+      // https://stackoverflow.com/a/13293044
+      transform: rotateZ(360deg);
+    }
+  }
+
   [class^='d-square'] {
     background-color: var(--color-bg);
     border: var(--border-size) solid var(--color-fg);
@@ -22,6 +46,30 @@
     padding: 0.5em;
     place-content: center;
     text-align: center;
+
+    &:nth-child(odd):not(.skip-class) {
+      --delay: 500ms;
+    }
+
+    &:nth-child(3n):not(.skip-class) {
+      --delay: 1000ms;
+    }
+
+    &:nth-child(even):not(.skip-class) {
+      --delay: 2000ms;
+    }
+
+    &:nth-child(4n):not(.skip-class) {
+      --delay: 3000ms;
+    }
+
+    &:nth-child(6n):not(.skip-class) {
+      --delay: 4000ms;
+    }
+
+    &:nth-child(7n):not(.skip-class) {
+      --delay: 5000ms;
+    }
   }
 
   .d-square {
@@ -173,14 +221,20 @@
         background-color: var(--color-fg);
         color: var(--color-bg);
 
-        p {
-          border-bottom: var(--border-size) solid var(--color-bg);
+        // lightbulb 'bulb'
+        .st0 {
+          fill: var(--lightbulb-color-hover);
         }
       }
 
-      p {
-        border-bottom: var(--border-size) solid var(--color-fg);
-        margin: 0 auto;
+      // lightbulb 'bulb'
+      .st0 {
+        fill: var(--lightbulb-color);
+      }
+
+      // lightbulb base
+      .st1 {
+        fill: var(--color-gray);
       }
     }
 

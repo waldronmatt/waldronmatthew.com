@@ -1,4 +1,3 @@
-/* stylelint-disable selector-no-qualifying-type */
 :root {
   --color-bg: #000;
   --color-fg: #fff;
@@ -11,12 +10,12 @@
   --border-size: 3px;
 }
 
-html[data-theme='light'] {
+:root[data-theme='light'] {
   --color-bg: #fff;
   --color-fg: #000;
 }
 
-html[data-theme='dark'] {
+:root[data-theme='dark'] {
   --color-bg: #000;
   --color-fg: #fff;
 }
