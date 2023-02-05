@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.4.0...v1.5.0) (2023-02-05)
+
+
+### Features
+
+* **global:** add background color animations to empty blocks ([db7badb](https://github.com/waldronmatt/waldronmatthew.com/commit/db7badb0e3415200747a2cbc9630392b5485ea51))
+
 # [1.4.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.3.3...v1.4.0) (2023-02-01)
 
 
