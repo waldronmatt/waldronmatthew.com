@@ -17,9 +17,6 @@
   // unless user preferences have animations enabled
   .init-animate {
     animation: color-change 20000ms ease var(--delay) 3 both;
-
-    // https://stackoverflow.com/a/13293044
-    transform: rotateZ(360deg);
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -31,9 +28,6 @@
   @media (prefers-reduced-motion: no-preference) {
     .init-animate {
       animation: color-change 20000ms ease var(--delay) 3 both;
-
-      // https://stackoverflow.com/a/13293044
-      transform: rotateZ(360deg);
     }
   }
 
