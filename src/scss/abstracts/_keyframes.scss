@@ -1,6 +1,6 @@
 @keyframes color-change {
   0% {
-    background-color: var(--color-bg);
+    background-color: none;
   }
 
   25% {
@@ -16,6 +16,6 @@
   }
 
   100% {
-    background-color: var(--color-bg);
+    background-color: none;
   }
 }
