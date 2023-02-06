@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.5.0...v1.5.1) (2023-02-06)
+
+
+### Bug Fixes
+
+* **keyframes.scss:** change to background none to fix ios non updating css var in keyframe ([f0e1a61](https://github.com/waldronmatt/waldronmatthew.com/commit/f0e1a61f0fb118f6abb05e4f17b02982a19424dd))
+
 # [1.5.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.4.0...v1.5.0) (2023-02-05)
 
 
