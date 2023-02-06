@@ -42,7 +42,7 @@
     text-align: center;
 
     &:nth-child(odd):not(.skip-class) {
-      --delay: 500ms;
+      --delay: 0ms;
     }
 
     &:nth-child(3n):not(.skip-class) {
