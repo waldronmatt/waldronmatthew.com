@@ -62,20 +62,6 @@ yarn lint
 
 **Note**: `release.yml` will run this before versioning and publishing.
 
-## Running PWA Locally
-
-1. Install [mkcert](https://github.com/FiloSottile/mkcert)
-
-2. Run `mkcert localhost` in the project root directory.
-
-3. Replace `dev` script in `package.json` with the following:
-
-```json
-"script": {
-  "dev": "webpack serve --https-cert localhost.pem --https-key localhost-key.pem --env development --config config/webpack.dev.js",
-}
-```
-
 ## License
 
 MIT
