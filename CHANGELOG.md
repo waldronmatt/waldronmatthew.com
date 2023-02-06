@@ -1,3 +1,12 @@
+## [1.5.2](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.5.1...v1.5.2) (2023-02-06)
+
+
+### Bug Fixes
+
+* **desktop.scss:** remove unnecessary transform optimization ([a0a16c2](https://github.com/waldronmatt/waldronmatthew.com/commit/a0a16c2739d9bed0274386ce386399a7c7710852))
+* **desktop.scss:** set delay to zero for initial color animation ([acdf168](https://github.com/waldronmatt/waldronmatthew.com/commit/acdf16883c7b150aea0116fb48d68aa2dcba73e0))
+* **src/js:** reset animation on theme change ([0da0360](https://github.com/waldronmatt/waldronmatthew.com/commit/0da03600670a18c8573a45f5c925c6c5d84bda59))
+
 ## [1.5.1](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.5.0...v1.5.1) (2023-02-06)
 
 
