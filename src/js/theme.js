@@ -1,8 +1,13 @@
-const syncLightbulbColors = () => {
+import { initAnimation, clearAnimation } from './animation';
+
+const syncAnimation = () => {
   const root = document.documentElement;
   if (document.firstElementChild.dataset.animation === 'disabled') {
     root.style.removeProperty('--lightbulb-color');
     root.style.removeProperty('--lightbulb-color-hover');
+  } else {
+    clearAnimation();
+    initAnimation();
   }
 };
 
@@ -45,7 +50,8 @@ window.addEventListener('load', () => {
       // flip current value
       theme.value = theme.value === 'light' ? 'dark' : 'light';
       // update lightbulb color to match current theme
-      syncLightbulbColors();
+      // and restart animation if present
+      syncAnimation();
       setPreference();
     });
   });
@@ -56,7 +62,6 @@ window
   .matchMedia('(prefers-color-scheme: dark)')
   .addEventListener('change', ({ matches: isDark }) => {
     theme.value = isDark ? 'dark' : 'light';
-    // update lightbulb color to match current theme
-    syncLightbulbColors();
+    syncAnimation();
     setPreference();
   });

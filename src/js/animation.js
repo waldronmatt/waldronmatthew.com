@@ -1,4 +1,4 @@
-const initAnimation = () => {
+export const initAnimation = () => {
   const root = document.documentElement;
   const style = getComputedStyle(root);
   document
@@ -16,7 +16,7 @@ const initAnimation = () => {
   );
 };
 
-const clearAnimation = () => {
+export const clearAnimation = () => {
   const root = document.documentElement;
   const style = getComputedStyle(root);
   document
