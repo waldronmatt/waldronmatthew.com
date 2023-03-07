@@ -6,11 +6,11 @@ const parts = () => {
     plugins: [
       new HtmlWebPackPlugin({
         filename: 'index.html',
-        title: 'Matthew Waldron, Front-End Developer',
+        title: 'Matthew Waldron, Full Stack Developer',
         template: `${paths.src}/index.html`,
         meta: {
-          description: 'A front-end developer building the next cigna.com.',
-          keywords: 'front-end, development, web, programming',
+          description: 'Matthew Waldron, Full Stack Developer',
+          keywords: 'full stack, development',
           viewport: 'width=device-width',
         },
         base: paths.publicPath,
