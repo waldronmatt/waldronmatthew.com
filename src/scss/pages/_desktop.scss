@@ -16,7 +16,7 @@
   // class omitted on page load by default
   // unless user preferences have animations enabled
   .init-animate {
-    animation: color-change 20000ms ease var(--delay) 3 both;
+    animation: color-change 20000ms ease var(--delay) 1 both;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -27,7 +27,7 @@
 
   @media (prefers-reduced-motion: no-preference) {
     .init-animate {
-      animation: color-change 20000ms ease var(--delay) 3 both;
+      animation: color-change 20000ms ease var(--delay) 1 both;
     }
   }
 
