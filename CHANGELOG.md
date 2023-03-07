@@ -1,3 +1,11 @@
+## [1.5.3](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.5.2...v1.5.3) (2023-03-07)
+
+
+### Bug Fixes
+
+* **_desktop.scss:** have animation run only once ([4658a4e](https://github.com/waldronmatt/waldronmatthew.com/commit/4658a4e9c48d1060e36087be92e4713deaf5300b))
+* **global:** update title ([9b9d604](https://github.com/waldronmatt/waldronmatthew.com/commit/9b9d604d4bf3b4d54bfe3e77311f6dd33ce5efb6))
+
 ## [1.5.2](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.5.1...v1.5.2) (2023-02-06)
 
 
