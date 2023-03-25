@@ -1,3 +1,19 @@
+# [1.6.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.5.3...v1.6.0) (2023-03-25)
+
+
+### Bug Fixes
+
+* **scss/:** inline width and height on svg to reduce fouc ([20cfba9](https://github.com/waldronmatt/waldronmatthew.com/commit/20cfba99351ff9a7cc04be3ac20bc601ad5d072d))
+* **scss/pages/:** swap yellow and gray colors for divs, change theme hover color on mobile ([ed68923](https://github.com/waldronmatt/waldronmatthew.com/commit/ed68923a508e31ed766f2e09e71c277d1aa3c7e2))
+* **webpack.common.js:** split out animation into separate chunk ([64872a8](https://github.com/waldronmatt/waldronmatthew.com/commit/64872a8ac782d7b2d9fd36807c9c246e845e6061))
+* **webpack.prod.js:** preload fonts and css ([bed1e06](https://github.com/waldronmatt/waldronmatthew.com/commit/bed1e06420002cda7bed495e58ce27003ec7cef3))
+
+
+### Features
+
+* **global:** refactor server code ([3476fb3](https://github.com/waldronmatt/waldronmatthew.com/commit/3476fb3c2737dc8ff48e204ebaad0a7449163ce3))
+* **src/:** add website logo, update grid padding and vertical letter spacing ([458e95c](https://github.com/waldronmatt/waldronmatthew.com/commit/458e95c9d14faac44d46f5884be8cb28569c6d73))
+
 ## [1.5.3](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.5.2...v1.5.3) (2023-03-07)
 
 
