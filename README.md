@@ -4,6 +4,8 @@
 
 My personal [portfolio website](https://www.waldronmatthew.com) built using [webpack-template](https://github.com/waldronmatt/webpack-template), the [simplepwa template](https://github.com/nikkifurls/simplepwa), and a custom version of the [theme-switcher](https://web.dev/building-a-theme-switch-component).
 
+Layout inspired by the [Composition with Red, Blue and Yellow](https://artsandculture.google.com/asset/composition-with-red-blue-and-yellow-piet-mondrian/5QG2Fm_LGUWAHA) painting on mobile and the [Great Composition A with Black, Red, Gray and Blue](https://artsandculture.google.com/story/RgWBdc6thZwOGA) painting on desktop.
+
 ## Installation
 
 Install dependencies:
