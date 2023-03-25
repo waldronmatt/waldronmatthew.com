@@ -20,7 +20,7 @@
   color: var(--color-fg);
   display: inline-grid;
   letter-spacing: 0.125rem;
-  padding: 0.5em;
+  padding: 0.25em;
   place-content: center;
   text-align: center;
 }
@@ -63,6 +63,7 @@
 
     @media (orientation: portrait) {
       p {
+        letter-spacing: initial;
         text-orientation: upright;
         writing-mode: vertical-rl;
       }
@@ -74,15 +75,6 @@
     border-left: var(--border-size) solid transparent;
     grid-column: 1 / 11;
     grid-row: 23 / 31;
-
-    @include on-event {
-      background-color: var(--color-red);
-      color: var(--color-black);
-
-      small {
-        border-bottom: var(--border-size) solid var(--color-black);
-      }
-    }
 
     small {
       border-bottom: var(--border-size) solid var(--color-fg);

@@ -44,6 +44,10 @@ html {
       font-size: 0.8rem;
       line-height: 1.75;
     }
+
+    .logo svg {
+      width: 75px;
+    }
   }
 
   .container-desktop {
@@ -59,6 +63,10 @@ html {
     small {
       font-size: 0.8rem;
       line-height: 1.75;
+    }
+
+    .logo svg {
+      width: 100px;
     }
   }
 }

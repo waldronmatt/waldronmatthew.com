@@ -196,6 +196,7 @@
       grid-row: 15 / 46;
 
       p {
+        letter-spacing: initial;
         text-orientation: upright;
         writing-mode: vertical-rl;
       }
@@ -303,15 +304,6 @@
       border-left: var(--border-size) solid transparent;
       grid-column: 1 / 15;
       grid-row: 51 / 61;
-
-      @include on-event {
-        background-color: var(--color-yellow);
-        color: var(--color-black);
-
-        p {
-          border-bottom: var(--border-size) solid var(--color-black);
-        }
-      }
 
       p {
         border-bottom: var(--border-size) solid var(--color-fg);
