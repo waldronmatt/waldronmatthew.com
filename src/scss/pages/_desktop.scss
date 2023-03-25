@@ -118,7 +118,7 @@
       grid-row: 10 / 15;
 
       @include on-event {
-        background-color: var(--color-yellow);
+        background-color: var(--color-gray);
         color: var(--color-black);
 
         small {
@@ -172,7 +172,7 @@
       text-decoration: none;
 
       @include on-event {
-        background-color: var(--color-gray);
+        background-color: var(--color-yellow);
         color: var(--color-black);
 
         p {
