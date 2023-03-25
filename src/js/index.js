@@ -2,4 +2,3 @@
 import '@/scss/index.scss';
 import './year';
 import './theme';
-import './animation';

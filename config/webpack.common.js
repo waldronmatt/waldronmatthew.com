@@ -12,6 +12,7 @@ const commonConfig = isProduction => {
     {
       entry: {
         main: [`${paths.src}/js/index.js`],
+        animation: [`${paths.src}/js/animation.js`],
       },
       output: {
         path: paths.build,
