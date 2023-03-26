@@ -61,7 +61,7 @@
         <p>Waldron</p>
       </div>
       <div class="m-square-d logo">
-        <%= require('html-loader!./logo.html').default %>
+        <%= require('html-loader!./partials/logo.html').default %>
       </div>
       <div class="m-square-e">
         <small>© <span class="footer-copyright"></span> Matt Waldron</small>
@@ -72,7 +72,18 @@
         aria-label="auto"
         aria-live="polite"
       >
-        <%= require('html-loader!./toggle-mobile.html').default %>
+        <span class="toggle-parent">
+          <svg
+            class="sun-and-moon"
+            aria-hidden="true"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <%= require('html-loader!./partials/moon-sun-m.html').default %> <%=
+            require('html-loader!./partials/sun-beams.html').default %>
+          </svg>
+        </span>
       </button>
     </main>
 
@@ -123,7 +134,7 @@
         aria-label="auto"
         aria-live="polite"
       >
-        <%= require('html-loader!./lightbulb.html').default %>
+        <%= require('html-loader!./partials/lightbulb.html').default %>
       </button>
       <a
         class="d-square-18 skip-class"
@@ -148,7 +159,7 @@
         <small>© <span class="footer-copyright"></span> Matt Waldron</small>
       </div>
       <div class="d-square-25 logo skip-class">
-        <%= require('html-loader!./logo.html').default %>
+        <%= require('html-loader!./partials/logo.html').default %>
       </div>
       <div class="d-square-26"></div>
       <button
@@ -156,7 +167,18 @@
         aria-label="auto"
         aria-live="polite"
       >
-        <%= require('html-loader!./toggle-desktop.html').default %>
+        <span class="toggle-parent">
+          <svg
+            class="sun-and-moon"
+            aria-hidden="true"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <%= require('html-loader!./partials/moon-sun-d.html').default %> <%=
+            require('html-loader!./partials/sun-beams.html').default %>
+          </svg>
+        </span>
       </button>
     </main>
   </body>
