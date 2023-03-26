@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.6.1...v1.6.2) (2023-03-26)
+
+
+### Bug Fixes
+
+* **global:** reorganize html and naming ([b436edf](https://github.com/waldronmatt/waldronmatthew.com/commit/b436edf69a498f64dd94c42fbb6126edc5fe2eaf))
+
 ## [1.6.1](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.6.0...v1.6.1) (2023-03-26)
 
 
