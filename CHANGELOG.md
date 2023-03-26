@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.6.0...v1.6.1) (2023-03-26)
+
+
+### Bug Fixes
+
+* **main.js:** update csp ([61af548](https://github.com/waldronmatt/waldronmatthew.com/commit/61af548185b015e7b430fcf3f395c0fc5cee16cc))
+
 # [1.6.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.5.3...v1.6.0) (2023-03-25)
 
 
