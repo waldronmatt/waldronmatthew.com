@@ -16,8 +16,13 @@ export const expressApp = () => {
   app.disable('x-powered-by');
   app.use(cors());
   app.use(
-    helmet({
-      contentSecurityPolicy: false,
+    helmet.contentSecurityPolicy({
+      directives: {
+        scriptSrc: [
+          "'self'",
+          "'sha256-2oSNrxWiw0odJzLeFq4qdkFPqcR5tCxpvBG3kMQqasA='",
+        ],
+      },
     })
   );
   app.use(express.json());
