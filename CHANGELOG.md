@@ -1,3 +1,10 @@
+## [1.6.3](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.6.2...v1.6.3) (2023-03-27)
+
+
+### Bug Fixes
+
+* **logo.html:** update svg logo, move yellow rectange ([1d16e35](https://github.com/waldronmatt/waldronmatthew.com/commit/1d16e3554810e495e877c44207fd632bded06bb4))
+
 ## [1.6.2](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.6.1...v1.6.2) (2023-03-26)
 
 
