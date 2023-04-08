@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.6.3...v1.7.0) (2023-04-08)
+
+
+### Features
+
+* **global:** add translation support ([f764d4e](https://github.com/waldronmatt/waldronmatthew.com/commit/f764d4e325687b71e018c098bedc0a7085df3f04))
+
 ## [1.6.3](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.6.2...v1.6.3) (2023-03-27)
 
 
