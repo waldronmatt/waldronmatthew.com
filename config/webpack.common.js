@@ -23,6 +23,9 @@ const commonConfig = isProduction => {
         alias: {
           '@': paths.src,
         },
+        fallback: {
+          fs: false,
+        },
       },
     },
     baseParts.loadJS({

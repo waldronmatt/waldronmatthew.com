@@ -118,11 +118,11 @@
       grid-row: 10 / 15;
 
       @include on-event {
-        background-color: var(--color-gray);
-        color: var(--color-black);
+        background-color: var(--color-fg);
+        color: var(--color-bg);
 
         small {
-          border-bottom: var(--border-size) solid var(--color-black);
+          border-bottom: var(--border-size) solid var(--color-bg);
         }
       }
 
@@ -199,6 +199,13 @@
         letter-spacing: initial;
         text-orientation: upright;
         writing-mode: vertical-rl;
+      }
+
+      &:lang(es) {
+        p {
+          letter-spacing: unset;
+          text-orientation: unset;
+        }
       }
     }
 
@@ -285,6 +292,19 @@
     &-22 {
       grid-column: 25 / 37;
       grid-row: 46 / 55;
+
+      @include on-event {
+        background-color: var(--color-gray);
+        color: var(--color-black);
+
+        p {
+          border-bottom: var(--border-size) solid var(--color-black);
+        }
+      }
+
+      p {
+        border-bottom: var(--border-size) solid var(--color-fg);
+      }
     }
 
     &-23 {

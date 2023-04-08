@@ -40,6 +40,27 @@ const productionConfig = {
       patterns: [{ from: paths.public, to: paths.dist }],
     }),
   ],
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          name: 'vendors',
+          chunks: 'all',
+          test: /node_modules/,
+          priority: 20,
+          enforce: true,
+        },
+        common: {
+          name: 'commons',
+          minChunks: 2,
+          chunks: 'all',
+          priority: 10,
+          reuseExistingChunk: true,
+          enforce: true,
+        },
+      },
+    },
+  },
 };
 
 module.exports = extendWebpackBaseConfig(commonConfig, productionConfig);
