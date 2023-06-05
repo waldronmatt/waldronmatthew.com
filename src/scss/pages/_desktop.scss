@@ -200,13 +200,6 @@
         text-orientation: upright;
         writing-mode: vertical-rl;
       }
-
-      &:lang(es) {
-        p {
-          letter-spacing: unset;
-          text-orientation: unset;
-        }
-      }
     }
 
     &-16 {

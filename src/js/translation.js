@@ -6,23 +6,23 @@ const translator = new Translator({
 
 translator
   .add('es', {
-    description: 'Desarrollador Full Stack',
-    keywords: 'full stack, desarrollador',
+    description: 'Desarrollador Sénior',
+    keywords: 'full stack, desarrollador, sénior',
     language: 'English',
     resume: 'Currículum',
     cv: 'Currículum vítae',
     contact: 'Contacto',
-    fullstack: 'desarrollador',
-    developer: 'full stack',
+    senior: 'desarrollador',
+    developer: 'sénior',
   })
   .add('en', {
-    description: 'Full Stack Developer',
-    keywords: 'full stack, development',
+    description: 'Senior Developer',
+    keywords: 'full stack, development, senior',
     language: 'Español',
     resume: 'Resume',
     cv: 'Curriculum vitae',
     contact: 'Contact',
-    fullstack: 'full stack',
+    senior: 'senior',
     developer: 'developer',
   });
 
