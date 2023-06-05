@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.7.0...v1.7.1) (2023-06-05)
+
+
+### Bug Fixes
+
+* **global:** update title ([0a08638](https://github.com/waldronmatt/waldronmatthew.com/commit/0a086388566735646fb40d538636fadf4401572b))
+
 # [1.7.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.6.3...v1.7.0) (2023-04-08)
 
 
