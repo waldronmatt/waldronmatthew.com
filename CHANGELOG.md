@@ -1,3 +1,11 @@
+## [1.7.2](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.7.1...v1.7.2) (2023-06-10)
+
+
+### Bug Fixes
+
+* **global:** lazy load translation library when clicked ([3b8de56](https://github.com/waldronmatt/waldronmatthew.com/commit/3b8de563b2269d8911d93e47b7e0838dd97dbfdb))
+* **theme.js:** sync animation only on desktop ([5a866b3](https://github.com/waldronmatt/waldronmatthew.com/commit/5a866b3df417b0a7c6565a9f5d4ca33fc78a851a))
+
 ## [1.7.1](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.7.0...v1.7.1) (2023-06-05)
 
 
