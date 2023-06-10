@@ -1,4 +1,4 @@
-const cacheName = 'cache7'; // Change value to force update
+const cacheName = 'cache8'; // Change value to force update
 
 self.addEventListener('install', event => {
   // Kick out the old service worker
