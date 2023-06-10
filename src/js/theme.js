@@ -49,9 +49,12 @@ window.addEventListener('load', () => {
     toggle?.addEventListener('click', () => {
       // flip current value
       theme.value = theme.value === 'light' ? 'dark' : 'light';
-      // update lightbulb color to match current theme
-      // and restart animation if present
-      syncAnimation();
+      // detect if we're on desktop
+      if (window.matchMedia('(min-width: 768px)')) {
+        // update lightbulb color to match current theme
+        // and restart animation if present
+        syncAnimation();
+      }
       setPreference();
     });
   });
@@ -62,6 +65,11 @@ window
   .matchMedia('(prefers-color-scheme: dark)')
   .addEventListener('change', ({ matches: isDark }) => {
     theme.value = isDark ? 'dark' : 'light';
-    syncAnimation();
+    // detect if we're on desktop
+    if (window.matchMedia('(min-width: 768px)')) {
+      // update lightbulb color to match current theme
+      // and restart animation if present
+      syncAnimation();
+    }
     setPreference();
   });
