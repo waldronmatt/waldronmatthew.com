@@ -1,3 +1,10 @@
+## [1.7.3](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.7.2...v1.7.3) (2023-07-06)
+
+
+### Bug Fixes
+
+* **translation.js:** add lang local storage support, remove lazy loading ([21d19c2](https://github.com/waldronmatt/waldronmatthew.com/commit/21d19c2dfa2d8fbbe6a1659a67ab796f7b6b2fb6))
+
 ## [1.7.2](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.7.1...v1.7.2) (2023-06-10)
 
 
