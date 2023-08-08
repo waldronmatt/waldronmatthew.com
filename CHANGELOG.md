@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.7.3...v1.8.0) (2023-08-08)
+
+
+### Features
+
+* **global:** add contrast switcher ([8945448](https://github.com/waldronmatt/waldronmatthew.com/commit/8945448f99d3b49cc7df8fdfc9287d11b628803e))
+
 ## [1.7.3](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.7.2...v1.7.3) (2023-07-06)
 
 
