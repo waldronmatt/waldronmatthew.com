@@ -3,7 +3,7 @@ import Translator from '@andreasremdt/simple-translator';
 const storageKey = 'preferred-language';
 
 // eslint-disable-next-line import/prefer-default-export
-const translator = new Translator({
+export const translator = new Translator({
   defaultLanguage: 'en',
   detectLanguage: true,
   persist: true,
@@ -16,7 +16,8 @@ translator
     keywords: 'full stack, desarrollador, sénior',
     language: 'English',
     resume: 'Currículum',
-    cv: 'Currículum vítae',
+    more: 'Más contraste',
+    less: 'Menos contraste',
     contact: 'Contacto',
     senior: 'desarrollador',
     developer: 'sénior',
@@ -26,7 +27,8 @@ translator
     keywords: 'full stack, development, senior',
     language: 'Español',
     resume: 'Resume',
-    cv: 'Curriculum vitae',
+    more: 'More contrast',
+    less: 'Less contrast',
     contact: 'Contact',
     senior: 'senior',
     developer: 'developer',
