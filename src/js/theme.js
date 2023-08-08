@@ -44,12 +44,10 @@ reflectPreference();
 window.addEventListener('load', () => {
   // set on load so screen readers can see latest value on the button
   reflectPreference();
-  // now this script can find and listen for clicks on the control
   document.querySelectorAll('.theme-toggle').forEach(toggle => {
     toggle?.addEventListener('click', () => {
       // flip current value
       theme.value = theme.value === 'light' ? 'dark' : 'light';
-      // detect if we're on desktop
       if (window.matchMedia('(min-width: 768px)')) {
         // update lightbulb color to match current theme
         // and restart animation if present
@@ -65,7 +63,6 @@ window
   .matchMedia('(prefers-color-scheme: dark)')
   .addEventListener('change', ({ matches: isDark }) => {
     theme.value = isDark ? 'dark' : 'light';
-    // detect if we're on desktop
     if (window.matchMedia('(min-width: 768px)')) {
       // update lightbulb color to match current theme
       // and restart animation if present

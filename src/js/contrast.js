@@ -35,19 +35,15 @@ reflectPreference();
 window.addEventListener('load', () => {
   // set on load so screen readers can see latest value on the button
   reflectPreference();
-  // now this script can find and listen for clicks on the control
-  document
-    // eslint-disable-next-line sonarjs/no-duplicate-string
-    .querySelector('.contrast-toggle')
-    .addEventListener('click', () => {
-      // flip current value
-      contrast.value = contrast.value === 'more' ? 'less' : 'more';
-      toggleElement.textContent = translator.translateForKey(
-        contrast.value === 'more' ? 'less' : 'more',
-        document.documentElement.lang
-      );
-      setPreference();
-    });
+  document.querySelector('.contrast-toggle').addEventListener('click', () => {
+    // flip current value
+    contrast.value = contrast.value === 'more' ? 'less' : 'more';
+    toggleElement.textContent = translator.translateForKey(
+      contrast.value === 'more' ? 'less' : 'more',
+      document.documentElement.lang
+    );
+    setPreference();
+  });
 });
 
 // sync with system changes

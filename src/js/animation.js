@@ -70,7 +70,6 @@ const setPreference = () => {
 window.addEventListener('load', () => {
   // set on load so screen readers can see latest value on the button
   reflectPreference();
-  // now this script can find and listen for clicks on the control
   document.querySelector('.animation-toggle')?.addEventListener('click', () => {
     // flip current value
     animation.value = animation.value === 'enabled' ? 'disabled' : 'enabled';
