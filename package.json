@@ -29,6 +29,7 @@
     "express-rate-limit": "^6.4.0",
     "express-static-gzip": "^2.1.6",
     "helmet": "^6.0.1",
+    "mem": "^9.0.2",
     "morgan": "^1.10.0",
     "sanitize.css": "^13.0.0",
     "serverless-http": "^3.0.1",

@@ -2,8 +2,8 @@ module.exports = {
   ignorePatterns: ['dist/**', 'bin/www', 'public/sw.js'],
   extends: '@waldronmatt/eslint-config',
   parserOptions: {
-    // Required for certain syntax usages
-    ecmaVersion: 2020,
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
   rules: {
     'unicorn/no-array-for-each': 0,

@@ -4,3 +4,4 @@ import './year';
 import './theme';
 import './contrast';
 import './translation';
+import './version';

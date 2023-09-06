@@ -10,6 +10,9 @@ const commonConfig = isProduction => {
 
   return merge([
     {
+      experiments: {
+        topLevelAwait: true,
+      },
       entry: {
         main: [`${paths.src}/js/index.js`],
         animation: [`${paths.src}/js/animation.js`],
@@ -29,6 +32,7 @@ const commonConfig = isProduction => {
       },
     },
     baseParts.loadJS({
+      target: 'esnext',
       include: [path.resolve(__dirname, `${paths.src}/js/`)],
     }),
     baseParts.setScriptOutputPath({}),
