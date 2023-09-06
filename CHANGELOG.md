@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.8.0...v1.9.0) (2023-09-06)
+
+
+### Features
+
+* **version.js:** add code to display site version ([a03abfd](https://github.com/waldronmatt/waldronmatthew.com/commit/a03abfdf4794d6ee45dd4e3ed21b4312cc334e3f))
+
 # [1.8.0](https://github.com/waldronmatt/waldronmatthew.com/compare/v1.7.3...v1.8.0) (2023-08-08)
 
 
